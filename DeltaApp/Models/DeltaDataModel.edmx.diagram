@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="57d34877d19d4e66b36415a67e2f356d" Name="Diagram1" ZoomLevel="74">
+        <EntityTypeShape EntityType="DeltaBDModel.ROL" Width="1.5" PointX="0.5" PointY="0.5" />
+        <EntityTypeShape EntityType="DeltaBDModel.USER" Width="1.5" PointX="3.5" PointY="0.5" />
+        <AssociationConnector Association="DeltaBDModel.fk_USER_ROL1" />
+        <EntityTypeShape EntityType="DeltaBDModel.ROL_VIEW" Width="1.5" PointX="0.5" PointY="18.625" />
+        <EntityTypeShape EntityType="DeltaBDModel.AREA_VIEW" Width="1.5" PointX="0.5" PointY="20.375" />
+        <EntityTypeShape EntityType="DeltaBDModel.PERTINENCES_VIEW" Width="2.75" PointX="0.5" PointY="22" />
+        <EntityTypeShape EntityType="DeltaBDModel.USERS_VIEW" Width="1.5" PointX="2.75" PointY="18.75" />
+        <EntityTypeShape EntityType="DeltaBDModel.PROCESS_N0" Width="1.5" PointX="0.5" PointY="3.875" />
+        <EntityTypeShape EntityType="DeltaBDModel.PROCESS_N2" Width="1.5" PointX="0.5" PointY="8.5" />
+        <EntityTypeShape EntityType="DeltaBDModel.PROCESS_N3" Width="1.5" PointX="0.5" PointY="11" />
+        <EntityTypeShape EntityType="DeltaBDModel.PROCESS_N0_VIEW" Width="2" PointX="0.5" PointY="16.875" />
+        <EntityTypeShape EntityType="DeltaBDModel.PROCESS_N2_VIEW" Width="1.875" PointX="5.625" PointY="16.75" />
+        <EntityTypeShape EntityType="DeltaBDModel.PROCESS_N3_VIEW" Width="2" PointX="7.75" PointY="16.75" />
+        <AssociationConnector Association="DeltaBDModel.fk_PROCESS_N2_copy1_PROCESS_N21" />
+        <EntityTypeShape EntityType="DeltaBDModel.DIVISION_N1_VIEW" Width="2.5" PointX="0.5" PointY="14.5" />
+        <EntityTypeShape EntityType="DeltaBDModel.DIVISION_N2_VIEW" Width="2.375" PointX="3.25" PointY="14.5" />
+        <EntityTypeShape EntityType="DeltaBDModel.DIVISION_N3_VIEW" Width="2.625" PointX="5.875" PointY="14.5" />
+        <EntityTypeShape EntityType="DeltaBDModel.AREA" Width="2.125" PointX="11.625" PointY="3.875" />
+        <EntityTypeShape EntityType="DeltaBDModel.DIVISION_N1" Width="1.5" PointX="11.625" PointY="6" />
+        <EntityTypeShape EntityType="DeltaBDModel.DIVISION_N2" Width="1.5" PointX="11.625" PointY="9" />
+        <EntityTypeShape EntityType="DeltaBDModel.DIVISION_N3" Width="1.5" PointX="11.625" PointY="12.25" />
+        <AssociationConnector Association="DeltaBDModel.fk_DIVISION_N1_AREA1" />
+        <AssociationConnector Association="DeltaBDModel.fk_DIVISION_N2_DIVISION_N11" />
+        <AssociationConnector Association="DeltaBDModel.fk_DIVISION_N3_DIVISION_N21" />
+        <EntityTypeShape EntityType="DeltaBDModel.PROCESS_N1" Width="1.5" PointX="0.5" PointY="6" />
+        <AssociationConnector Association="DeltaBDModel.fk_PROCESS_N1_PROCESS1" />
+        <AssociationConnector Association="DeltaBDModel.fk_PROCESS_N2_PROCESS_N11" />
+        <EntityTypeShape EntityType="DeltaBDModel.PROCESS_N1_VIEW" Width="2.375" PointX="2.875" PointY="16.75" />
+        <EntityTypeShape EntityType="DeltaBDModel.PERTINENCES" Width="2.5" PointX="3.75" PointY="22" />
+        <EntityTypeShape EntityType="DeltaBDModel.GOAL_CONFIABILITY_INDEX" Width="2.375" PointX="7.875" PointY="6.625" />
+        <EntityTypeShape EntityType="DeltaBDModel.PRODUCT" Width="1.5" PointX="5.5" PointY="1.25" />
+        <AssociationConnector Association="DeltaBDModel.fk_PRODUCT_GOAL_CONFIABILITY_INDEX1" />
+        <AssociationConnector Association="DeltaBDModel.fk_PRODUCT_PROCESS_N01" />
+        <AssociationConnector Association="DeltaBDModel.fk_PRODUCT_PROCESS_N11" />
+        <AssociationConnector Association="DeltaBDModel.fk_PRODUCT_PROCESS_N21" />
+        <AssociationConnector Association="DeltaBDModel.fk_PRODUCT_PROCESS_N31" />
+        <EntityTypeShape EntityType="DeltaBDModel.PRODUCT_VIEW" Width="1.5" PointX="9.25" PointY="21.625" />
+        <EntityTypeShape EntityType="DeltaBDModel.PERTINENCES_BY_MEASURE_VIEW" Width="4" PointX="11.375" PointY="21.5" />
+        <EntityTypeShape EntityType="DeltaBDModel.PRODUCT_PERTINENCES_VIEW" Width="2.375" PointX="6.5" PointY="21.875" />
+        <EntityTypeShape EntityType="DeltaBDModel.PERT_MEASURE" Width="1.5" PointX="16.75" PointY="13.25" />
+        <AssociationConnector Association="DeltaBDModel.fk_PERT_MEASURE_PERTINENCES1" />
+        <EntityTypeShape EntityType="DeltaBDModel.MEASURE_PERTINENCES_VIEW" Width="4.75" PointX="15.875" PointY="22.375" />
+        <EntityTypeShape EntityType="DeltaBDModel.GENERAL_RESUME_VIEW" Width="3.875" PointX="11.5" PointY="17.875" />
+        <EntityTypeShape EntityType="DeltaBDModel.USER_PU_RELATION_MEASURE_VIEW" Width="2.125" PointX="12.125" PointY="24.125" />
+        <EntityTypeShape EntityType="DeltaBDModel.ROL_RELATION_MEASURE_VIEW" Width="4" PointX="8.375" PointY="0.75" />
+        <EntityTypeShape EntityType="DeltaBDModel.EFECTIVITY_OK_VIEW" Width="2" PointX="11.625" PointY="26.375" />
+        <EntityTypeShape EntityType="DeltaBDModel.EFECTIVITY_VIEW" Width="1.5" PointX="13.75" PointY="26.375" />
+        <EntityTypeShape EntityType="DeltaBDModel.MEASURE_NO_PRODUCTS_VIEW" Width="2.375" PointX="8.375" PointY="3.75" />
+        <EntityTypeShape EntityType="DeltaBDModel.MEASURE_PRODUCT" Width="1.5" PointX="15.5" PointY="4.625" />
+        <AssociationConnector Association="DeltaBDModel.fk_MEASURE_PRODUCT_AREA_" />
+        <AssociationConnector Association="DeltaBDModel.fk_MEASURE_PRODUCT_DIVISION_N1_" />
+        <AssociationConnector Association="DeltaBDModel.fk_MEASURE_PRODUCT_DIVISION_N2_" />
+        <AssociationConnector Association="DeltaBDModel.fk_MEASURE_PRODUCT_DIVISION_N3_" />
+        <AssociationConnector Association="DeltaBDModel.fk_MEASURE_PRODUCT_PRODUCT1" />
+        <AssociationConnector Association="DeltaBDModel.fk_MEASURE_PRODUCT_USER_" />
+        <AssociationConnector Association="DeltaBDModel.fk_PERT_MEASURE_MEASURE_PRODUCT1" />
+        <EntityTypeShape EntityType="DeltaBDModel.MEASURE_VIEW" Width="1.5" PointX="18.375" PointY="0.75" />
+        <EntityTypeShape EntityType="DeltaBDModel.PRODUCT_DEFECTS_DETAIL" Width="1.5" PointX="3.375" PointY="8.875" />
+        <EntityTypeShape EntityType="DeltaBDModel.PERTINENCES_DEFECTS" Width="2.625" PointX="5.375" PointY="9.75" />
+        <EntityTypeShape EntityType="DeltaBDModel.PRODUCT_ROL_VIEW" Width="2.375" PointX="12.75" PointY="0.875" />
+        <EntityTypeShape EntityType="DeltaBDModel.PRODUCT_ROL_QUERY_VIEW" Width="2.25" PointX="15.375" PointY="0.75" />
+        <EntityTypeShape EntityType="DeltaBDModel.USER_TYPE_MODULES" Width="1.5" PointX="16.375" PointY="16.75" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

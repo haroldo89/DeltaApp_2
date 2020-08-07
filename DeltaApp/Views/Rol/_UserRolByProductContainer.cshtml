@@ -1,0 +1,23 @@
+﻿<script src="~/Scripts/modernizr-2.6.2.js"></script>
+<link href="~/Content/DualBoxList/bootstrap-duallistbox.css" rel="stylesheet" type="text/css" media="all" />
+<script src="~/Scripts/DualBoxList/jquery.bootstrap-duallistbox.js"></script>
+
+<script>
+    $('#cbxAvaliableProducts').bootstrapDualListbox(
+        {
+            nonselectedlistlabel: 'Productos Disponibles',
+            selectedlistlabel: 'Productos Asociados',
+            preserveselectiononmove: 'moved',
+            moveonselect: true,
+            selectorminimalheight: 230,
+            filterplaceholder: 'Buscar',
+            filtertextclear: 'Ver Todos',
+            infotextempty: 'No hay datos',
+            infotext: 'Total: {0}',
+            infotextfiltered: '<span class="label label-warning">Filtro Aplicado</span> {0} de {1}'
+        });
+</script>
+
+<div id="gridContent" style="padding: 10px;">
+    @Html.DropDownList("PDT_ID", (IEnumerable<SelectListItem>)ViewBag.AvaliableProducts, new { id = "cbxAvaliableProducts", name = "cbxAvaliableProducts", multiple = "multiple" })
+</div>

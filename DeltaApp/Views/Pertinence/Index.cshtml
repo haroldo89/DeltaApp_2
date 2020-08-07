@@ -1,0 +1,49 @@
+﻿<link href="~/Content/Views/Pertinence/Index.css" rel="stylesheet" />
+<script src="~/Scripts/Views/Pertinence/Index.js"></script>
+
+<script type="text/javascript">
+    $(window).load(function () { $("#spinner").fadeOut("slow"); })
+    $(document).ready(function () {
+        var listCmd = '@this.Url.Action("GetPertinences", "Pertinence")';
+        var deleteCmd = '@this.Url.Action("DeletePertinence", "Pertinence")';
+        var updateCmd = '@this.Url.Action("UpdatePertinence", "Pertinence")';
+        var createCmd = '@this.Url.Action("CreatePertinence", "Pertinence")';
+        PertinenceIndex.initializeComponents(listCmd, deleteCmd, updateCmd, createCmd);
+    });
+</script>
+@using (Html.BeginForm("Index", "Pertinence", FormMethod.Post, new { id = "formPertinence" }))
+{
+    <div>
+        <div>
+            <h2 class="h2">Pertinencias</h2>
+        </div>
+    </div>
+
+    <div>
+        <div>
+            <table style="width: 100%; text-align: center;">
+                <tr>
+                    <td>
+                        <input id="txtName" name="txtName" placeholder="Nombre" type="text" />
+                    </td>
+                </tr>
+            </table>
+            <hr />
+            <table style="width: 100%; text-align: center;">
+                <tr>
+                    <td>
+                        <input type="submit" id="btnIndex" value="Atrás" class="input button" />
+                        <input type="submit" id="btnSearch" value="Buscar" class="input button" />
+                        <input type="submit" id="btnNewSearch" value="Nueva Búsqueda" class="input button" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div>
+        <div>
+            <hr />
+        </div>
+    </div>
+    <div id="divPertinenceTableContainerValue"></div>
+}

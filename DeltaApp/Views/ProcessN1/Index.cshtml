@@ -1,0 +1,50 @@
+﻿<link href="~/Content/Views/ProcessN1/Index.css" rel="stylesheet" />
+
+<script src="~/Scripts/Views/ProcessN1/Index.js"></script>
+
+<script type="text/javascript">
+    $(window).load(function () { $("#spinner").fadeOut("slow"); })
+    $(document).ready(function () {
+        var listCmd = '@this.Url.Action("GetProcess1", "ProcessN1")';
+        var deleteCmd = '@this.Url.Action("DeleteProcess1", "ProcessN1")';
+        var updateCmd = '@this.Url.Action("UpdateProcess1", "ProcessN1")';
+        var createCmd = '@this.Url.Action("CreateProcess1", "ProcessN1")';
+        ProcessN1Index.initializeComponents(listCmd, deleteCmd, updateCmd, createCmd);
+    });
+</script>
+@using (Html.BeginForm("Index", "ProcessN1", FormMethod.Post, new { id = "formProcessN1" }))
+{
+    <div>
+        <div>
+            <h2 class="h2">Procedimiento N1</h2>
+        </div>
+    </div>
+
+    <div>
+        <div>
+            <table style="width: 100%; text-align: center;">
+                <tr>
+                    <td>
+                        <input id="txtName" name="txtName" placeholder="Nombre" type="text" />
+                    </td>
+                </tr>
+            </table>
+            <hr />
+            <table style="width: 100%; text-align: center;">
+                <tr>
+                    <td>
+                        <input type="submit" id="btnIndex" value="Atrás" class="input button" />
+                        <input type="submit" id="btnSearch" value="Buscar" class="input button" />
+                        <input type="submit" id="btnNewSearch" value="Nueva Búsqueda" class="input button" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div>
+        <div>
+            <hr />
+        </div>
+    </div>
+    <div id="divProcessN1TableContainerValue"></div>
+}

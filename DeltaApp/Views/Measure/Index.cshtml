@@ -1,0 +1,741 @@
+﻿@*<link href="~/Content/site.css" rel="stylesheet" />*@
+<link href="~/Content/Views/Measure/Index.css" rel="stylesheet" />
+<script src="~/Scripts/Views/Measure/ShowPreviewInfo.js"></script>
+<script src="~/Scripts/Views/Measure/Index.js"></script>
+
+<script>
+    $(document).ready(function () {
+        // Inicializar productos.
+        MeasureIndex.initializeComponents();
+    });
+</script>
+
+
+@using (Html.BeginForm("Index", "Measure", FormMethod.Post, new { id = "formMeasure" }))
+{
+    <div>
+        <div>
+            <h2 class="h2">Medición de Productos</h2>
+        </div>
+    </div>
+
+    <div>
+        <div>
+            <br />
+            <!--informacion Basica Producto-->
+            <div>
+                <fieldset>
+                    <legend id="lgnCustomer" class="desc">
+                        Información Producto
+                    </legend>
+
+                    <div>
+                        <label class="desc" id="lblreprocessCount" for="txtreprocessCount">
+                            Cuenta Reprocesos
+                        </label>
+                        <div>
+                            <input id="txtreprocessCount" name="txtreprocessCount" type="text" value="" disabled>
+                        </div>
+                    </div>
+
+                    <div>
+
+                        <label class="desc" id="lblProducto" for="ddlProducto">
+                            Producto *
+                        </label>
+                        <div>
+                            <select id="ddlProducto" name="ddlProducto" class="validate[required]"></select>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="desc" id="lblInitial" for="txtInitial">
+                            Sigla
+                        </label>
+                        <div>
+                            <input id="txtInitial" name="txtInitial" type="text" value="" disabled>
+                        </div>
+                    </div>
+
+                    <div style="padding-bottom: 15px;">
+                        <label id="lgnRoutes" class="desc">
+                            Posee Código
+                        </label>
+                        <div id="tabsProductCode">
+                            <ul>
+                                <li><a href="#tabsWithProductCode">Si</a></li>
+                                <li><a href="#tabsNoProductCode">No</a></li>
+                            </ul>
+                            <div id="tabsWithProductCode">
+                                <div>
+                                    <label class="desc" id="lblProductCode" for="txtProductCode">
+                                        Código
+                                    </label>
+                                    <div>
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <label class="desc" id="lblSigla">
+                                                        Sigla
+                                                    </label>
+                                                    <label class="desc" id="lblSiglaSeparator">
+                                                        -
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <select id="ddlProductoCode" name="ddlProductoCode" style="display: none;"></select>
+                                                    <input id="txtProductCode" name="txtProductCode" type="text" value="" class="validate[maxSize[10],custom[integer] ]">
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <br />
+
+                                        <label class="desc" id="lblNewCode" for="txtProductCode">
+                                            Ingresar Codigo Nuevo
+                                        </label>
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <label class="desc" id="lblNewSigla">
+                                                        Sigla
+                                                    </label>
+                                                    <label class="desc" id="lblSiglaSeparator">
+                                                        -
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <label class="desc" id="lblNewCode">
+                                                        <input id="txtNewProductCode" name="txtNewProductCode" type="text" value="" class="validate[required, maxSize[10],custom[integer] ]">
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tabsNoProductCode">
+                                <div>
+                                    <label class="desc" id="lblNoProductCode" for="txtNoProductCode">
+                                        Código
+                                    </label>
+                                    <div>
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <label class="desc" id="lblDefSigla">
+                                                        Sigla
+                                                    </label>
+                                                    <label class="desc" id="lblSiglaSeparator">
+                                                        -
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <select id="ddlProductoNoCode" name="ddlProductoNoCode" style="display: none;"></select>
+                                                    <input id="txtNoProductCode" name="txtNoProductCode" type="text" value="" class="validate[maxSize[10],custom[integer] ]">
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <br />
+
+                                        <label class="desc" id="lblNewCode" for="txtProductCode">
+                                            Ingresar Codigo Nuevo
+                                        </label>
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <label class="desc" id="lblDefNewSigla">
+                                                        Sigla
+                                                    </label>
+                                                    <label class="desc" id="lblSiglaSeparator">
+                                                        -
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <label class="desc" id="lblNewCode">
+                                                        <input id="txtNewProductNoCode" name="txtNewProductNoCode" type="text" value="" class="validate[required, maxSize[10],custom[integer] ]">
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </fieldset>
+            </div>
+
+            <br />
+            <!--Procesos y Procedimientos-->
+            <div>
+                <fieldset>
+                    <legend id="lgnVehicle" class="desc">
+                        Procesos y Procedimientos
+                    </legend>
+                    <div>
+                        <label class="desc" id="lblProcessN0" for="txtProcessN0">
+                            Proceso
+                        </label>
+                        <div>
+                            <input id="txtProcessN0" name="txtProcessN0" type="text" value="" disabled>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="desc" id="lblProcessN1" for="txtProcessN1">
+                            Procedimeinto N1
+                        </label>
+                        <div>
+                            <input id="txtProcessN1" name="txtProcessN1" type="text" value="" disabled>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="desc" id="lblProcessN2" for="txtProcessN2">
+                            Procedimiento N2
+                        </label>
+                        <div>
+                            <input id="txtProcessN2" name="txtProcessN2" type="text" value="" disabled>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="desc" id="lblProcessN3" for="txtProcessN3">
+                            Procedimiento N3
+                        </label>
+                        <div>
+                            <input id="txtProcessN3" name="txtProcessN3" type="text" value="" disabled>
+                        </div>
+                    </div>
+
+                </fieldset>
+            </div>
+
+            <br />
+            <!--Äreas y Divisiones -->
+            <div>
+                <fieldset>
+                    <legend id="lgnVehicle" class="desc">
+                        Áreas y Divisiones
+                    </legend>
+                    <div>
+                        <label class="desc" id="lblArea" for="ddlArea">
+                            Área *
+                        </label>
+                        <div>
+                            <select id="ddlArea" name="ddlArea" class="validate[required]"></select>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="desc" id="lblDivisionN1" for="ddlDivisionN1">
+                            División N1
+                        </label>
+                        <div>
+                            <select id="ddlDivisionN1" name="ddlDivisionN1" class="validate[required]"></select>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="desc" id="lblDivisionN2" for="ddlDivisionN2">
+                            División N2
+                        </label>
+                        <div>
+                            <select id="ddlDivisionN2" name="ddlDivisionN2" class="validate[required]"></select>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="desc" id="lblDivisionN3" for="ddlDivisionN3">
+                            División N3
+                        </label>
+                        <div>
+                            <select id="ddlDivisionN3" name="ddlDivisionN3"></select>
+                        </div>
+                    </div>
+
+                </fieldset>
+            </div>
+
+            <br />
+            <!--Caracterizticas Oportunidad-->
+            <div>
+                <fieldset>
+                    <legend id="lgnCustomer" class="desc">
+                        Características Oportunidad
+                    </legend>
+                    <div style="padding-bottom: 15px;">
+                        <label id="lgnRoutes" class="desc">
+                            Oportunidad
+                        </label>
+                        <div id="tabsOpportunityType">
+                            <ul>
+                                <li><a href="#tabsOpportunityTypeAdvance">Anticipo</a></li>
+                                <li><a href="#tabsOpportunityTypeDelay">Retraso</a></li>
+                                <li><a href="#tabsOpportunityTypeAccordDate">Fecha Acordada</a></li>
+                            </ul>
+                            <div id="tabsOpportunityTypeAdvance">
+                                <div>
+                                    <div>
+                                        <label class="desc" id="lblReferencePoint" for="txtAReferencePoint">
+                                            Punto de Referencia *
+                                        </label>
+                                        <div>
+                                            <input type="text" id="txtAReferencePoint" name="txtAReferencePoint" value="" disabled />
+                                        </div>
+                                    </div>
+
+
+                                    <div>
+                                        <table style="width:100%;">
+                                            <tr>
+                                                <td>
+                                                    <label class="desc" id="lblDaysReferencePoint" for="txtADaysReferencePoint">
+                                                        Dias *
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <label class="desc" id="lblHoursReferencePoint" for="txtAHoursReferencePoint">
+                                                        Horas *
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <label class="desc" id="lblMinuteReferencePoint" for="txtAMinuteReferencePoint">
+                                                        Minutos *
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div>
+                                                        <input type="text" id="txtADaysReferencePoint" name="txtADaysReferencePoint" value="" disabled />
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div>
+                                                        <input type="text" id="txtAHoursReferencePoint" name="txtAHoursReferencePoint" value="" disabled />
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div>
+                                                        <input type="text" id="txtAMinuteReferencePoint" name="txtAMinuteReferencePoint" value="" disabled />
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tabsOpportunityTypeDelay">
+                                <div>
+                                    <div>
+                                        <label class="desc" id="lblReferencePoint" for="txtDReferencePoint">
+                                            Punto de Referencia *
+                                        </label>
+                                        <div>
+                                            <input type="text" id="txtDReferencePoint" name="txtDReferencePoint" value="" disabled />
+                                        </div>
+                                    </div>
+
+
+                                    <div>
+                                        <table style="width:100%;">
+                                            <tr>
+                                                <td>
+                                                    <label class="desc" id="lblDaysReferencePoint" for="txtDDaysReferencePoint">
+                                                        Dias *
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <label class="desc" id="lblHoursReferencePoint" for="txtDHoursReferencePoint">
+                                                        Horas *
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <label class="desc" id="lblMinuteReferencePoint" for="txtDMinuteReferencePoint">
+                                                        Minutos *
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div>
+                                                        <input type="text" id="txtDDaysReferencePoint" name="txtDDaysReferencePoint" value="" disabled />
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div>
+                                                        <input type="text" id="txtDHoursReferencePoint" name="txtDHoursReferencePoint" value="" disabled />
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div>
+                                                        <input type="text" id="txtDMinuteReferencePoint" name="txtDMinuteReferencePoint" value="" disabled />
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tabsOpportunityTypeAccordDate">
+                                <div>
+                                    <label class="desc" id="lblOpportunityTypeAccordDate" for="txtOpportunityTypeAccordDate">
+                                        Fecha *
+                                    </label>
+                                    <div>
+                                        <input id="txtOpportunityTypeAccordDate" name="txtOpportunityTypeAccordDate" type="text" value="" class="validate[required]" disabled>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </fieldset>
+            </div>
+            <br>
+
+            <div>
+                <fieldset>
+                    <div style="padding-bottom: 15px;">
+                        <label id="lgnRoutes" class="desc">
+                            Entregado Oportunamente
+                        </label>
+                        <div id="tabsOportunityDelivery">
+                            <ul>
+                                <li><a href="#tabsYes">Si</a></li>
+                                <li><a href="#tabsNo">No</a></li>
+                            </ul>
+                            <div id="tabsYes">
+                                <div>
+
+                                </div>
+                            </div>
+                            <div id="tabsNo">
+                                <div>
+                                    <div>
+                                        <table style="width:100%;">
+                                            <tr>
+                                                <td>
+                                                    <label class="desc" id="lblDaysReferencePoint" for="txtMeasureDaysReferencePoint">
+                                                        Dias *
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <label class="desc" id="lblHoursReferencePoint" for="txtMeasureHoursReferencePoint">
+                                                        Horas *
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <label class="desc" id="lblMinuteReferencePoint" for="txtMeasureMinuteReferencePoint">
+                                                        Minutos *
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div>
+                                                        <input type="text" id="txtMeasureDaysReferencePoint" name="txtMeasureDaysReferencePoint" value="" />
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div>
+                                                        <input type="text" id="txtMeasureHoursReferencePoint" name="txtMeasureHoursReferencePoint" value="" />
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div>
+                                                        <input type="text" id="txtMeasureMinuteReferencePoint" name="txtMeasureMinuteReferencePoint" value="" />
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <br>
+
+            <!--Pertinencias-->
+            <div>
+                <fieldset>
+                    <legend id="lgnAditionalInfo" class="desc">
+                        Pertinencias
+                    </legend>
+                </fieldset>
+                <div style="padding-bottom: 15px;">
+                    <div id="tabsPertinences">
+                        <ul>
+                            <li><a href="#tabsPertinences-1">Pertinencias</a></li>
+                        </ul>
+                        <div id="tabsPertinences-1">
+                            <div>
+                                <label class="desc" id="lblPicking" for="txtPertinencesItem">
+                                    Pertinencias
+                                </label>
+                                <div>
+                                    <div id="pertContainer">
+
+                                    </div>
+                                </div>
+                                <div>
+                                    <ul id="ulPickingItems"></ul>
+                                </div>
+                            </div>
+
+                            <div id="div1"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr />
+            <!-- Boton de Creacion de Medicion -->
+            <div>
+                <div style="text-align: center;">
+                    <input id="btnSave" name="btnSave" type="submit" value="Guardar">
+                </div>
+            </div>
+
+
+
+            <!-- Popup de previsualizacion de viaje -->
+            <div id="divMeasureTableContainer" style="display: none;">
+                <!-- Informacion basica de producto -->
+                <div class="rTable" style="width: 100%;">
+                    <div class="rTableRow ">
+                        <div class="rTableCell" style="text-align: right; width: 50%; padding-right: 5px; vertical-align: top;">
+                            <label>Cuenta Reproceso:</label>
+                        </div>
+                        <div class="rTableCell" style="text-align: left; width: 50%; padding-right: 5px;">
+                            <label id="lblRepCountInfoPopup" style="font-weight: normal;"></label>
+                        </div>
+                    </div>
+
+                    <div class="rTableRow ">
+                        <div class="rTableCell" style="text-align: right; width: 50%; padding-right: 5px; vertical-align: top;">
+                            <label>Nombre Producto:</label>
+                        </div>
+                        <div class="rTableCell" style="text-align: left; width: 50%; padding-right: 5px;">
+                            <label id="lblproductNameInfoPopup" style="font-weight: normal;"></label>
+                        </div>
+                    </div>
+
+                    <div class="rTableRow ">
+                        <div class="rTableCell" style="text-align: right; width: 50%; padding-right: 5px; vertical-align: top;">
+                            <label>Sigla:</label>
+                        </div>
+                        <div class="rTableCell" style="text-align: left; width: 50%; padding-right: 5px;">
+                            <label id="lblInitialInfoPopup" style="font-weight: normal;"></label>
+                        </div>
+                    </div>
+
+                    <div class="rTableRow ">
+                        <div class="rTableCell" style="text-align: right; width: 50%; padding-right: 5px; vertical-align: top;">
+                            <label>Código Rastreo:</label>
+                        </div>
+                        <div class="rTableCell" style="text-align: left; width: 50%; padding-right: 5px;">
+                            <label id="lblCodeInfoPopup" style="font-weight: normal;"></label>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Proceso-->
+                <div id="tbProcessInfoPopup" style="width: 100%; text-align: center; padding-top: 1px; display: table;">
+                    <div class="rTableRow" style="width: 100%;">
+                        <div class="rTableCell" style="text-align: right; width: 50%; padding-right: 5px; vertical-align: top;">
+                            <label>Proceso:</label>
+                        </div>
+                        <div class="rTableCell" style="text-align: left; width: 50%;">
+                            <label id="lblProcessInfoPopup" style="font-weight: normal;"></label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Procedimiento N1-->
+                <div id="tbProcessN1InfoPopup" style="width: 100%; text-align: center; padding-top: 1px; display:table;">
+                    <div class="rTableRow" style="width: 100%;">
+                        <div class="rTableCell" style="text-align: right; width: 50%; padding-right: 5px; vertical-align: top;">
+                            <label>Procedimiento N1:</label>
+                        </div>
+                        <div class="rTableCell" style="text-align: left; width: 50%;">
+                            <label id="lblProcessN1InfoPopup" style="font-weight: normal;"></label>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Procedimiento N2-->
+                <div id="tbProcessN2InfoPopup" style="width: 100%; text-align: center; padding-top: 1px; display: none;">
+                    <div class="rTableRow" style="width: 100%;">
+                        <div class="rTableCell" style="text-align: right; width: 50%; padding-right: 5px; vertical-align: top;">
+                            <label>Procedimiento N2:</label>
+                        </div>
+                        <div class="rTableCell" style="text-align: left; width: 50%;">
+                            <label id="lblProcessN2InfoPopup" style="font-weight: normal;"></label>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Procedimiento N3-->
+                <div id="tbProcessN3InfoPopup" style="width: 100%; text-align: center; padding-top: 1px; display: none;">
+                    <div class="rTableRow" style="width: 100%;">
+                        <div class="rTableCell" style="text-align: right; width: 50%; padding-right: 5px; vertical-align: top;">
+                            <label>Procedimiento N3:</label>
+                        </div>
+                        <div class="rTableCell" style="text-align: left; width: 50%;">
+                            <label id="lblProcessN3InfoPopup" style="font-weight: normal;"></label>
+                        </div>
+                    </div>
+                </div>
+                @* Tipo de Oportunidad *@
+                <div style="width: 100%; text-align: center; padding-top: 1px; display: table;">
+                    <div class="rTableRow" style="width: 100%;">
+                        <div class="rTableCell" style="text-align: right; width: 50%; padding-right: 5px; vertical-align: top;">
+                            <label>Tipo Oportunidad</label>
+                        </div>
+                        <div class="rTableCell" style="text-align: left; width: 50%;">
+                            <label id="lblOpportunityTypeInfoPopup" style="font-weight: normal;"></label>
+                        </div>
+                    </div>
+                </div>
+                @* Punto de Referencia *@
+                <div id="tbRefPointInfoPopup" style="width: 100%; text-align: center; padding-top: 1px; display: none;">
+                    <div class="rTableRow" style="width: 100%;">
+                        <div class="rTableCell" style="text-align: right; width: 50%; padding-right: 5px; vertical-align: top;">
+                            <label>Punto Referencia:</label>
+                        </div>
+                        <div class="rTableCell" style="text-align: left; width: 50%;">
+                            <label id="lblReferencePointInfoPopup" style="font-weight: normal;"></label>
+                        </div>
+                    </div>
+                </div>
+
+                @* Punto de Dias *@
+                <div id="tbRefPointDaysInfoPopup" style="width: 100%; text-align: center; padding-top: 1px; display: none;">
+                    <div class="rTableRow" style="width: 100%;">
+                        <div class="rTableCell" style="text-align: right; width: 50%; padding-right: 5px; vertical-align: top;">
+                            <label>Dias:</label>
+                        </div>
+                        <div class="rTableCell" style="text-align: left; width: 50%;">
+                            <label id="lblRefDayInfoPopup" style="font-weight: normal;"></label>
+                        </div>
+                    </div>
+                </div>
+
+                @* Punto de Horas *@
+                <div id="tbRefPointHourInfoPopup" style="width: 100%; text-align: center; padding-top: 1px; display: none;">
+                    <div class="rTableRow" style="width: 100%;">
+                        <div class="rTableCell" style="text-align: right; width: 50%; padding-right: 5px; vertical-align: top;">
+                            <label>Horas:</label>
+                        </div>
+                        <div class="rTableCell" style="text-align: left; width: 50%;">
+                            <label id="lblRefHourInfoPopup" style="font-weight: normal;"></label>
+                        </div>
+                    </div>
+                </div>
+
+                @* Punto de Minutos *@
+                <div id="tbRefPointMinInfoPopup" style="width: 100%; text-align: center; padding-top: 1px; display: none;">
+                    <div class="rTableRow" style="width: 100%;">
+                        <div class="rTableCell" style="text-align: right; width: 50%; padding-right: 5px; vertical-align: top;">
+                            <label>Minutos:</label>
+                        </div>
+                        <div class="rTableCell" style="text-align: left; width: 50%;">
+                            <label id="lblRefMinInfoPopup" style="font-weight: normal;"></label>
+                        </div>
+                    </div>
+                </div>
+
+                @* Fecha Acordada *@
+                <div id="tbDateInfoPopup" style="width: 100%; text-align: center; padding-top: 1px; display: none;">
+                    <div class="rTableRow" style="width: 100%;">
+                        <div class="rTableCell" style="text-align: right; width: 50%; padding-right: 5px; vertical-align: top;">
+                            <label>Fecha Acorda:</label>
+                        </div>
+                        <div class="rTableCell" style="text-align: left; width: 50%;">
+                            <label id="lblDateInfoPopup" style="font-weight: normal;"></label>
+                        </div>
+                    </div>
+                </div>
+
+                @* Entrega Oportuna *@
+                <div id="tbOpOKInfoPopup" style="width: 100%; text-align: center; padding-top: 1px; display: table;">
+                    <div class="rTableRow" style="width: 100%;">
+                        <div class="rTableCell" style="text-align: right; width: 50%; padding-right: 5px; vertical-align: top;">
+                            <label>¿Oportunidad OK?:</label>
+                        </div>
+                        <div class="rTableCell" style="text-align: left; width: 50%;">
+                            <label id="lblOpOkInfoPopup" style="font-weight: normal;"></label>
+                        </div>
+                    </div>
+                </div>
+
+                @* Entrega Oportuna Dias *@
+                <div id="tbOpDInfoPopup" style="width: 100%; text-align: center; padding-top: 1px; display: none;">
+                    <div class="rTableRow" style="width: 100%;">
+                        <div class="rTableCell" style="text-align: right; width: 50%; padding-right: 5px; vertical-align: top;">
+                            <label>Detalle Dias:</label>
+                        </div>
+                        <div class="rTableCell" style="text-align: left; width: 50%;">
+                            <label id="lblOpDInfoPopup" style="font-weight: normal;"></label>
+                        </div>
+                    </div>
+                </div>
+
+                @* Entrega Oportuna Horas *@
+                <div id="tbOpHInfoPopup" style="width: 100%; text-align: center; padding-top: 1px; display: none;">
+                    <div class="rTableRow" style="width: 100%;">
+                        <div class="rTableCell" style="text-align: right; width: 50%; padding-right: 5px; vertical-align: top;">
+                            <label>Detalle Horas:</label>
+                        </div>
+                        <div class="rTableCell" style="text-align: left; width: 50%;">
+                            <label id="lblOpHInfoPopup" style="font-weight: normal;"></label>
+                        </div>
+                    </div>
+                </div>
+
+                @* Entrega Oportuna Minutos *@
+                <div id="tbOpMInfoPopup" style="width: 100%; text-align: center; padding-top: 1px; display: none;">
+                    <div class="rTableRow" style="width: 100%;">
+                        <div class="rTableCell" style="text-align: right; width: 50%; padding-right: 5px; vertical-align: top;">
+                            <label>Detalle Minutos:</label>
+                        </div>
+                        <div class="rTableCell" style="text-align: left; width: 50%;">
+                            <label id="lblOpMInfoPopup" style="font-weight: normal;"></label>
+                        </div>
+                    </div>
+                </div>
+
+                @* Informacion Pertinencias *@               
+                <div id="tbProductInfoPickingPopup" style="width: 100%; text-align: center; padding-top: 1px; display: none;">
+                    <div class="rTableRow" style="width: 100%;">
+                        <div class="rTableCell" style="text-align: right; width: 50%; padding-right: 5px; vertical-align: top;">
+                            <label>Pertinencias:</label>
+                        </div>
+                        <div id="divSelectedPickNumber" class="rTableCell" style="text-align: left; width: 50%;">
+                            <label id="lblSelectedPickingNumber" style="font-weight: normal;"></label>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="rTable" style="width: 100%; text-align: center;">
+                    <div class="rTableRow ">
+                        <div class="rTableCell">
+                            <input type="submit" id="btnSaveProductInfoPopup" name="btnSaveProductInfoPopup" value="Crear" />
+                            <input type="submit" id="btnCancelProductInfoPopup" name="btnCancelProductInfoPopup" value="Cancelar" />
+                        </div>
+                    </div>
+                </div>
+                <hr />
+            </div>
+        </div>
+    </div>
+    <div>
+        <div>
+            <hr />
+        </div>
+    </div>
+}

@@ -1,0 +1,252 @@
+﻿/*
+// ===================================================================================================
+// Desarrollado Por		    :   Harold Caicedo.
+// Fecha de Creación		:   2016/05/02.
+// ===================================================================================================
+// Versión	        Descripción
+// 1.0.0.0	        hoja de estilos para la vista CreateLastMile.aspx
+// ===================================================================================================
+// HISTORIAL DE CAMBIOS:
+// ===================================================================================================
+// Ver.	 Fecha		    Autor					Descripción
+// ---	 -------------	----------------------	------------------------------------------------------
+// XX	 yyyy/MM/dd	    [Nombre Completo]	    [Razón del cambio realizado] 
+// ===================================================================================================
+*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px 15%;
+}
+
+form header {
+    margin: 0 0 20px 0;
+}
+
+    form header div {
+        font-size: 90%;
+        color: #999;
+    }
+
+    form header h2 {
+        margin: 0 0 5px 0;
+    }
+
+form > div {
+    clear: both;
+    overflow: hidden;
+    padding: 1px;
+    margin: 0 0 10px 0;
+}
+
+    form > div > fieldset > div > div {
+        margin: 0 0 5px 0;
+    }
+
+    form > div > label,
+    legend {
+        /*width: 25%;*/
+        float: left;
+        padding-right: 10px;
+    }
+
+    form > div > div,
+    form > div > fieldset > div {
+        width: 75%;
+        /*float: right;*/
+    }
+
+    form > div > fieldset label {
+        font-size: 90%;
+    }
+
+fieldset {
+    border: 0;
+    padding: 0;
+}
+
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password],
+textarea {
+    width: 100%;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password],
+select {
+    /*width: 50%;*/
+    width: 65%;
+}
+
+    input[type=text]:focus,
+    input[type=email]:focus,
+    input[type=url]:focus,
+    input[type=password]:focus,
+    textarea:focus {
+        outline: 0;
+        border-color: #4697e4;
+    }
+
+@media (max-width: 700px) {
+    form > div {
+        margin: 0 0 15px 0;
+    }
+
+        form > div > label,
+        legend {
+            width: 100%;
+            float: none;
+            margin: 0 0 5px 0;
+        }
+
+        form > div > div,
+        form > div > fieldset > div {
+            width: 100%;
+            float: none;
+        }
+
+    input[type=text],
+    input[type=email],
+    input[type=url],
+    input[type=password],
+    textarea,
+    select {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    form > div > label,
+    legend {
+        text-align: right;
+    }
+}
+
+
+.ui-autocomplete {
+    max-height: 200px;
+    overflow-y: auto;
+    /* prevent horizontal scrollbar */
+    overflow-x: hidden;
+}
+/* IE 6 doesn't support max-height
+   * we use height instead, but this forces the menu to always be this tall
+   */
+* html .ui-autocomplete {
+    height: 200px;
+}
+
+#ulPickingItems .ui-selecting {
+    background: #FECA40;
+}
+
+#ulPickingItems .ui-selected {
+    background: #F39814;
+    color: white;
+}
+
+#ulPickingItems {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    background: orange;
+}
+
+    #ulPickingItems li {
+        padding-left: 0.4em;
+        background: orange;
+        color: white;
+    }
+
+.ui-widget-content {
+    border: none !important;
+}
+
+.jtable-dialog-form {
+    width: 350px;
+}
+
+    .jtable-dialog-form input[type="checkbox"] {
+        width: auto;
+    }
+
+    .jtable-dialog-form input[type="text"] {
+        width: 250px;
+    }
+
+    .jtable-dialog-form select {
+        width: 250px;
+    }
+
+div.jtable-main-container > div.jtable-bottom-panel select {
+    color: black;
+}
+
+div.jtable-main-container > table.jtable > thead th.jtable-column-header-sortable div.jtable-column-header-container {
+    height: auto;
+}
+
+div.jtable-main-container > table.jtable > thead th.jtable-column-header div.jtable-column-header-container {
+    height: auto !important;
+}
+
+div.jtable-child-table-container > div.jtable-main-container > div.jtable-title {
+    background-color: gray;
+}
+
+div.jtable-child-table-container > div.jtable-main-container > table.jtable {
+    border: 1px solid #454545;
+}
+
+    div.jtable-child-table-container > div.jtable-main-container > table.jtable > thead {
+        background-color: #454545;
+    }
+
+div.jtable-child-table-container > div.jtable-main-container > div.jtable-busy-message {
+    background-color: #676767;
+}
+
+div.jtable-child-table-container > div.jtable-main-container > div.jtable-title div.jtable-toolbar span.jtable-toolbar-item {
+    background-color: #676767;
+}
+
+.rTable {
+    display: table;
+}
+
+.rTableRow {
+    display: table-row;
+}
+
+.rTableHeading {
+    display: table-header-group;
+}
+
+.rTableBody {
+    display: table-row-group;
+}
+
+.rTableFoot {
+    display: table-footer-group;
+}
+
+.rTableCell, .rTableHead {
+    display: table-cell;
+}
+
+#viewReportDiv {
+    background-color: #454545;
+}

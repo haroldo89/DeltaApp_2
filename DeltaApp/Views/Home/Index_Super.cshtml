@@ -1,0 +1,72 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Delta - Login</title>
+    @*<link rel="shortcut icon" />href="<%= Page.ResolveUrl(" ~/favicon.png")%>" />*@
+    <link href="~/Content/Styles/" rel="stylesheet" />
+    <link href="~/Content/Styles/layout.css" rel="stylesheet" />
+    <link href="~/Content/Styles/font-awesome.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <script src="~/Scripts/jquery-2.2.2.js"></script>
+    <script src="~/Scripts/jquery-migrate-1.2.1.js"></script>
+    <script src="~/Scripts/modernizr.custom.js"></script>
+    <script src="~/Scripts/responsive.js"></script>
+</head>
+
+<body>
+    @using (Html.BeginForm("Index", "Login", FormMethod.Post, new { id = "formAppServiceType" }))
+    {
+        <header class="header navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="row">
+                    <div class="navbar-logo">
+
+                        <img src="~/Content/Images/Delta.PNG" class="navbar-logo-layout" />
+                    </div>
+                    <div class="navbar-header-layout">
+                        @* <a class="navbar-brand-layout"  href="~/Login.aspx">Dummy</a>*@
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="main-content">
+            @*<div class="hea"> Imagen</div>
+                <div>Imagen2</div>*@
+            <h1>Portal Administrador</h1>
+            @*<p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+                <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>*@
+
+
+
+
+
+            <div class="form-bg">
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-default">
+                        <span class="glyphicon glyphicon-cog"></span> Editar Productos
+                    </button>
+                </div>
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-default">
+                        <span class="glyphicon glyphicon-pencil"></span> Asignar Productos
+                    </button>
+                </div>
+                    </div><div class="col-md-4">
+                    <button type="button" class="danger">
+                        <span class="glyphicon glyphicon-search"></span> Realizar Consultas
+                    </button>
+                </div>
+
+        </div>
+
+        <footer class="footer text-right">
+            <p>&copy; Pacific @DateTime.Now.Year </p>
+        </footer>
+    }
+</body>
+</html>

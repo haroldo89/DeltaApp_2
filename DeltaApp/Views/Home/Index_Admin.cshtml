@@ -1,0 +1,89 @@
+﻿@*<style>
+        #feedback {
+            font-size: 1.4em;
+        }
+
+        #selectable .ui-selecting {
+            background: #FECA40;
+        }
+
+        #selectable .ui-selected {
+            background: #F39814;
+            color: white;
+        }
+
+        #selectable {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 600px;
+        }
+
+            #selectable li {
+                float: left;
+                width: 250px;
+                height: 50px;
+                font-size: 20px;
+                text-align: center;
+            }
+
+                #selectable li input[type=submit] {
+                    background: #CC0000;
+                    border: none;
+                    margin: 3px;
+                    padding: 1px;
+                    float: left;
+                    width: 243px;
+                    height: 43px;
+                    font-size: 20px;
+                    text-align: center;
+                }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("#selectable").selectable();
+            $("#lnkRolIndex").click(function () {
+                window.parent.location.href = "/Rol/Index";
+            })
+            $("#lnkAreaIndex").click(function () {
+                window.parent.location.href = "/Area/Index";
+            })
+            $("#lnkPertinenceIndex").click(function () {
+                window.parent.location.href = "/Pertinence/Index";
+                return false;
+            })
+            $("#lnkUserIndex").click(function () {
+                window.parent.location.href = "/User/Index";
+                return false;
+            })
+        });
+    </script>
+
+    <h2>PROCESOS</h2>
+
+    <ol id="selectable">
+        <li id="lnkRol" class="ui-state-default">
+            <input type="submit" id="lnkRolIndex" value="ROLES" />
+        </li>
+        <li class="ui-state-default">
+            <input type="submit" id="lnkAreaIndex" value="AREAS" />
+        </li>
+        <li class="ui-state-default">
+            <input type="submit" id="lnkPertinenceIndex" value="PERTINENCIAS" />
+        </li>
+        <li class="ui-state-default">
+            <input type="submit" id="lnkUserIndex" value="USUARIOS" />
+        </li>
+        <li class="ui-state-default">5</li>
+        <li class="ui-state-default">6</li>
+        <li class="ui-state-default">7</li>
+        <li class="ui-state-default">8</li>
+        <li class="ui-state-default">9</li>
+        <li class="ui-state-default">10</li>
+        <li class="ui-state-default">11</li>
+        <li class="ui-state-default">12</li>
+    </ol>*@
+
+<div>
+    <img src="~/Content/Styles/images/Portada1.png" style="align-content:center; margin:auto" />
+</div>

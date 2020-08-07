@@ -1,0 +1,55 @@
+﻿<link href="~/Content/Views/Area/Index.css" rel="stylesheet" />
+
+<script src="~/Scripts/Views/Area/Index.js"></script>
+
+<script type="text/javascript">
+    $(window).load(function () { $("#spinner").fadeOut("slow"); })
+    $(document).ready(function () {
+        var listCmd = '@this.Url.Action("GetAreas", "Area")';
+        var deleteCmd = '@this.Url.Action("DeleteArea", "Area")';
+        var updateCmd = '@this.Url.Action("UpdateArea", "Area")';
+        var createCmd = '@this.Url.Action("CreateArea", "Area")';
+        AreaIndex.initializeComponents(listCmd, deleteCmd, updateCmd, createCmd);
+    });
+</script>
+@using (Html.BeginForm("Index", "Area", FormMethod.Post, new { id = "formArea" }))
+{
+    <div>
+        <div>
+            <h2 class="h2">Areas</h2>
+        </div>
+    </div>
+
+    <div>
+        <div>
+            <table style="width: 100%; text-align: center;">
+                <tr>
+                    <td>
+                        <input id="txtName" name="txtName" placeholder="Nombre" type="text" />
+                    </td>
+                </tr>
+            </table>
+            <hr />
+            <table style="width: 100%; text-align: center;">
+                <tr>
+                    <td>
+                        <input type="submit" id="btnIndex" value="Atrás" class="input button" />
+                        <input type="submit" id="btnSearch" value="Buscar" class="input button" />
+                        <input type="submit" id="btnNewSearch" value="Nueva Busqueda" class="input button" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div>
+        <div>
+            <hr />
+        </div>
+    </div>
+    <div id="divAreaTableContainerValue"></div>
+    <div id="divDivisionContainer" style="display:none;">
+        <div id="divDivisionN1TableContainer">
+            <div id="divDivisionN1TableContainerValue"></div>
+        </div>
+    </div>
+}

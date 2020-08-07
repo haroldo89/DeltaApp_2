@@ -1,0 +1,19 @@
+DROP PROCEDURE DELETE_MEASURE;
+DELIMITER $$
+CREATE PROCEDURE DELETE_MEASURE
+(
+	in msrID			int,
+    out resultMessage	varchar(200)
+)
+BEGIN
+
+IF NOT EXISTS (SELECT * FROM MEASURE_PRODUCT WHERE MSR_ID = msrID) THEN
+	SET resultMessage = 'El Registro de Medicion no Existe';
+ELSE
+	DELETE FROM MEASURE_PRODUCT
+	WHERE MSR_ID = msrID;
+END IF;
+
+END
+
+

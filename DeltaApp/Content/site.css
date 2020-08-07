@@ -1,0 +1,3642 @@
+﻿.windowWidht {
+    position: fixed;
+    top: 1px;
+    right: 2px;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+    font-size: .85em;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif !important;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #333333;
+    text-decoration: none;
+}
+
+a {
+    background: none repeat scroll 0 0 transparent;
+}
+
+@font-face {
+    font-family: 'TGL';
+    src: url('fonts/TGL 31034-1.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/MontserratAlternates-Bold.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('fonts/Quicksand-Light.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+/*HEADER*/
+.navbar:before, .navbar:after {
+    content: " ";
+    display: table;
+}
+
+*:before, *:after {
+    box-sizing: border-box;
+}
+
+.navbar:after {
+    clear: both;
+}
+
+.navbar:before, .navbar:after {
+    content: " ";
+    display: table;
+}
+
+.navbar-default {
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+}
+
+.navbar-fixed-top {
+    border-width: 0 0 1px;
+    top: 0;
+}
+
+.navbar-fixed-top, .navbar-fixed-bottom {
+    border-radius: 0;
+}
+
+.navbar {
+    border-radius: 4px;
+}
+
+.navbar {
+    border: 1px solid transparent;
+    margin-bottom: 20px;
+    min-height: 56px;
+    position: relative;
+}
+
+.navbar-fixed-top, .navbar-fixed-bottom {
+    left: 0;
+    position: fixed;
+    right: 0;
+    z-index: 1030;
+}
+
+.header {
+    background-color: #fff;
+    border-bottom: 1px solid #eeeeee;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.container {
+    width: 1170px;
+}
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.navbar-header:after {
+    clear: both;
+}
+
+.navbar-header:after {
+    clear: both;
+}
+
+.navbar-header {
+    position: absolute;
+    right: 6%;
+    top: 31px;
+}
+
+.navbar-new-menu {
+    float: right;
+}
+
+.navbar-logo {
+    float: left;
+    margin: 10px 0 5px;
+}
+
+html[lang='\
+en'] a img {
+    border: none;
+}
+
+.navbar-logo1 {
+    float: left;
+    width: 180px;
+}
+
+.navbar-icon {
+    float: left;
+    margin: -6px 13px 2px 0;
+    width: 35px;
+}
+
+.navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;
+    max-height: 340px;
+    overflow-x: visible;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+    margin-left: -15px;
+}
+
+.navbar-default .navbar-brand {
+    color: #58585a;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 300;
+    padding-right: 10px;
+    position: relative;
+    text-decoration: underline;
+    top: 19px;
+}
+
+.small {
+    font-size: 13px !important;
+    padding-right: 10px;
+}
+
+.navbar-collapse:before, .navbar-collapse:after {
+    content: " ";
+    display: table;
+}
+
+.navbar-collapse:after {
+    clear: both;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #e7e7e7;
+}
+
+.navbar-fixed-top .navbar-collapse, .navbar-static-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbar-collapse {
+    border-top: 0 none;
+    box-shadow: none;
+    width: auto;
+}
+
+    .navbar-collapse.collapse {
+        display: block !important;
+        height: auto !important;
+        overflow: visible !important;
+        padding-bottom: 0;
+    }
+
+.collapse {
+    display: none;
+}
+
+.navbar-nav.navbar-right:last-child {
+    margin-right: -15px;
+}
+
+.navbar-right {
+    float: right !important;
+}
+
+.nav {
+    list-style: none outside none;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+    .nav > li {
+        display: block;
+        position: relative;
+    }
+
+.navbar-default .navbar-nav > li > a {
+    color: #777777;
+}
+
+.navbar-nav > li > a {
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.navbar-nav > li {
+    float: left;
+}
+
+.nav > li > a {
+    display: block;
+    padding: 10px 15px;
+    position: relative;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #dddddd;
+}
+
+.navbar-toggle {
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    float: right;
+    margin-bottom: 8px;
+    margin-right: 15px;
+    margin-top: 8px;
+    padding: 5px;
+    position: relative;
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    cursor: pointer;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #888888;
+}
+
+.navbar-toggle .icon-bar {
+    border-radius: 1px;
+    display: block;
+    height: 2px;
+    width: 22px;
+    margin-top: 4px;
+}
+
+.dl-menuwrapper {
+    float: right;
+}
+
+#polyglotLanguageSwitcher {
+    position: absolute;
+    right: -48px;
+    top: 19px;
+}
+/*END HEADER*/
+
+.main-content {
+    /*background-color: #dfdfdf;*/
+    color: #000000;
+    font-family: verdana;
+    padding: 45px 0 35px;
+    text-align: center;
+}
+
+.routeForm {
+    background-color: #fff;
+    box-shadow: 7px 3px 9px #888888;
+    margin: 20px auto 8px;
+    height: 760px;
+    padding: 15px 5px;
+}
+/*FILE BUTTON*/
+.file-input-wrapper {
+    height: 39px;
+    overflow: hidden;
+    position: absolute;
+    vertical-align: middle;
+    width: 100px;
+}
+
+    .file-input-wrapper > input[type="file"] {
+        font-size: 200px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    .file-input-wrapper > .btn-file-input {
+        background-color: #ffad28;
+        border-radius: 4px;
+        color: #fff;
+        display: inline-block;
+        font-family: Segoe UI;
+        font-size: 15px;
+        font-weight: bold;
+        height: 33px;
+        width: 90px;
+    }
+
+    .file-input-wrapper > .btn-file-input2 {
+        background-color: #FF5454;
+        border-radius: 4px;
+        color: #fff;
+        display: inline-block;
+        font-family: Segoe UI;
+        font-size: 15px;
+        font-weight: bold;
+        height: 33px;
+        width: 90px;
+    }
+
+    .file-input-wrapper:hover > .btn-file-input {
+        background-color: #ffad28;
+    }
+
+.lhFile {
+    height: 26px;
+    margin: 1px -64px 0;
+    position: absolute;
+    vertical-align: middle;
+    width: 150px;
+}
+
+_:-ms-input-placeholder, :root .lhFile {
+    margin: 0px 107px 0;
+}
+
+_:-ms-input-placeholder, :root .uploadFileBtn {
+    margin: 3px 0 0 278px;
+}
+
+_:-ms-input-placeholder, :root .lhFile {
+    background-color: #ffffff;
+}
+
+/*html[lang='\
+en'] .lhFile 
+{
+    margin: 0px 107px 0;
+    background-color: #ffffff;
+}
+html[lang='\
+en'] .uploadFileBtn 
+{
+    margin: 3px 0 0 278px;
+}*/
+
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .lhFile {
+        background-color: #ffffff;
+    }
+}
+/*END FILE BUTTON*/
+
+.formContent {
+    height: 47px;
+    margin: 18px auto 4px;
+    padding: 8px 5px;
+    position: relative;
+    width: 1180px;
+}
+
+.formContentNew {
+    height: 47px;
+    margin: 18px auto 4px;
+    padding: 8px 5px;
+    position: relative;
+    width: 877px;
+}
+
+.formCell {
+    float: left;
+    height: 40px;
+    margin-right: 8px;
+    padding: 5px 6px;
+    text-align: left;
+    width: 311px;
+}
+
+.formCellFile {
+    float: left;
+    height: 40px;
+    margin: -8px 4px;
+    padding: 5px;
+    width: 360px;
+}
+
+.formCellFile2 {
+    height: 40px;
+    margin: 2px auto;
+    padding: 5px;
+    width: 60%;
+}
+
+.formCellDate {
+    float: left;
+    height: 40px;
+    margin-right: 8px;
+    padding: 5px;
+    width: 205px;
+}
+
+.uploadFileBtnSave {
+    background-color: #58585a;
+    border: 1px solid #777777;
+    border-radius: 2px;
+    color: #ffffff;
+    font-family: Quicksand;
+    font-size: 16px;
+    font-weight: 600;
+    height: 35px;
+    margin: 1px 0 2px;
+    position: absolute;
+    width: 85px;
+}
+
+.btnPuestosDiv {
+    position: relative;
+}
+
+.puestosTable {
+    height: 200px;
+    margin-top: 2px;
+    overflow-y: auto;
+    position: relative;
+}
+
+.uploadFileBtnSave:hover {
+    background-color: #8F8F93;
+    border: 1px solid #8F8F93;
+}
+
+.uploadFileBtnViaje {
+    background-color: #58585a;
+    border: 1px solid #777777;
+    color: #ffffff;
+    float: right;
+    font-family: tahoma;
+    font-size: 16px;
+    height: 31px;
+    margin-right: 19px;
+    margin-top: -5px;
+    width: 90px;
+}
+
+    .uploadFileBtnViaje:hover {
+        background-color: #8F8F93;
+    }
+
+.uploadFileBtn {
+    background-color: #555557;
+    border: 1px solid #777777;
+    border-radius: 2px;
+    color: #ffffff;
+    font-family: Quicksand;
+    font-size: 14px;
+    font-weight: 600;
+    height: 28px;
+    margin: 5px 0 0 110px;
+    position: absolute;
+    width: 74px;
+}
+
+    .uploadFileBtn:hover {
+        background-color: #8F8F93;
+    }
+
+.uploadFileBtn2 {
+    background-color: #555557;
+    border: 1px solid #777777;
+    border-radius: 2px;
+    color: #ffffff;
+    font-family: Quicksand;
+    font-size: 14px;
+    font-weight: 600;
+    height: 28px;
+    margin: 5px auto;
+    position: relative;
+    width: 74px;
+}
+
+    .uploadFileBtn2:hover {
+        background-color: #8F8F93;
+    }
+
+.center {
+    margin: 10px auto;
+    text-align: center;
+}
+
+.mapForm {
+    /*opacity: 0.35;
+   pointer-events: none;*/
+    margin-top: 25px;
+}
+
+#ck-button {
+    float: right;
+    margin: 0 8px;
+    overflow: auto;
+}
+
+    #ck-button label {
+        background-color: #e6f0fb;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        float: left;
+        margin-left: 4px;
+        width: 2em;
+    }
+
+        #ck-button label span {
+            text-align: center;
+            padding: 3px 0px;
+            display: block;
+            border-radius: 4px;
+        }
+
+        #ck-button label input {
+            position: absolute;
+            top: -20px;
+        }
+
+    #ck-button input:checked + span {
+        background-color: #FFAD28;
+        border-color: #FFAD28;
+        color: #fff;
+    }
+
+
+h1, h2, h3,
+h4, h5, h6 {
+    color: #777777;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+h1 {
+    color: #555557;
+    font-family: verdana;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 1.75em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+h4 {
+    font-size: 1.1em;
+    margin-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 4px;
+}
+
+h5, h6 {
+    font-size: 1em;
+}
+
+    h5 a:link, h5 a:visited, h5 a:active {
+        padding: 0;
+        text-decoration: none;
+    }
+
+.settingsroute {
+    border: 1px dotted #97b8d8;
+    border-radius: 6px;
+    float: left;
+    height: 590px;
+    margin: 0 10px 3px;
+    padding: 4px;
+    text-align: left;
+    width: 50%;
+    overflow: auto;
+}
+/*@media screen and (-webkit-min-device-pixel-ratio:0) {
+     .settingsroute{
+        width: 50%;
+    }
+}*/
+span.smallLabels {
+    color: #555557;
+    font-family: monospace;
+    font-size: 13px;
+    font-weight: 500;
+    padding-left: 15px;
+    text-decoration: underline;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    span.smallLabels {
+        font-family: sans-serif;
+        font-size: 13px;
+    }
+}
+
+.rutaName {
+    margin: 0 4px;
+    width: 160px;
+}
+
+.deliveryPoints {
+    border-radius: 6px;
+    font-family: Verdana;
+    font-size: 11px;
+    height: 77%;
+    margin: 20px auto 2px;
+    overflow-y: auto;
+    position: relative;
+    width: 96%;
+}
+
+.selectContainer {
+    margin: -19px 0 0 81px;
+}
+
+span.fontTitle {
+    font-size: 14px;
+    padding: 2px 1px 0 25px;
+}
+
+span.fontTitleInline {
+    font-size: 14px;
+    padding: 2px 11px;
+    display: inline-block;
+}
+
+.inlineCombo {
+    display: inline-block;
+}
+
+.settingsrouteDiv {
+    margin: 11px 0;
+}
+
+span.linkJsTitleS, span.linkJsTitleD, span.linkJsTitle, span.ptoS, span.ptoD {
+    color: #FA9E25;
+    font-size: 11px;
+    font-family: Tahoma;
+    cursor: pointer;
+}
+
+.backLink {
+    color: #fcb962 !important;
+    font-family: Verdana;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 6px;
+}
+
+    .backLink:hover {
+        color: #fcb962 !important;
+    }
+
+.catalogoLink {
+    color: #fcb962 !important;
+    font-family: Verdana;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.info {
+    color: #555557;
+    font-family: Tahoma;
+    font-size: 11px;
+    margin-top: 10px;
+    padding-left: 24px;
+    position: relative;
+}
+
+.catalogoLink:hover {
+    color: #fcb962 !important;
+}
+
+.ptosVisible {
+    display: inline-block;
+}
+
+.rutanameDiv {
+    float: left;
+    margin-right: 8px;
+    width: 250px;
+}
+
+.settingsrouteDivTipo {
+    float: left;
+    width: 210px;
+}
+
+.settingsrouteDivDias {
+    float: right;
+    margin: 4px 8px 6px 0;
+    width: 405px;
+}
+
+.ptosDiv {
+    margin-top: 10px;
+}
+
+.findViajeDiv {
+    float: right;
+    margin-right: 10px;
+    margin-top: -18px;
+}
+
+.findViajeTxt {
+    width: 88px;
+}
+
+.findViajeBtn {
+    background-color: #f5f5f5;
+    border: 2px solid #ccc;
+    color: #777;
+    font-family: Tahoma;
+    font-size: 13px;
+    padding: 2px 6px;
+}
+
+    .findViajeBtn:hover {
+        color: #000;
+    }
+
+.editLineShow {
+    -moz-box-shadow: 4px 5px 5px 1px #ccc;
+    -webkit-box-shadow: 4px 5px 5px 1px #ccc;
+    background-color: #f7dc91;
+    box-shadow: 4px 5px 5px 1px #ccc;
+    display: none;
+    height: 65px;
+    margin: 4px auto 10px;
+    padding: 6px;
+    width: 670px;
+}
+
+.lineItems {
+    display: block;
+    height: 26px;
+    margin: 0 auto;
+    position: relative;
+    width: 630px;
+}
+
+.lineItems1 {
+    display: block;
+    height: 26px;
+    margin: 0 auto;
+    position: relative;
+    width: 610px;
+}
+
+.clienteTxtDiv {
+    float: left;
+    height: 25px;
+    text-align: right;
+    width: 230px;
+}
+
+.ordenTxtDiv {
+    float: left;
+    height: 25px;
+    margin: 0 4px;
+    text-align: right;
+    width: 134px;
+}
+
+.radioTxtDiv {
+    background-color: #f7dc91;
+    border-radius: 4px;
+    box-shadow: -5px 3px 6px 1px #ccc;
+    display: none;
+    height: 35px;
+    left: 164px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    position: absolute;
+    text-align: center;
+    top: 68px;
+    width: 330px;
+}
+
+.rcLetters {
+    font-size: 11px;
+}
+
+.radioDiv {
+    margin-right: 18px;
+    width: 28px;
+}
+
+.coordeDiv {
+    margin-top: 5px;
+    width: 84px;
+}
+
+.departamentoTxtDiv {
+    float: left;
+    height: 25px;
+    margin: 0 4px;
+    text-align: right;
+    width: 222px;
+}
+
+.direccionTxtDiv {
+    float: left;
+    height: 25px;
+    text-align: right;
+    width: 516px;
+}
+
+.actualizarLinea {
+    background-color: #ffad28;
+    border: 1px solid #ffad28;
+    border-radius: 4px;
+    color: #fff;
+    float: right;
+    font-family: Arial;
+    font-size: small;
+    margin: 4px 17px;
+}
+
+    .actualizarLinea:hover {
+        background-color: #FF9D00;
+    }
+
+.agregarLinea {
+    background-color: #ffad28;
+    border: 1px solid #ffad28;
+    border-radius: 2px;
+    color: #fff;
+    float: right;
+    font-family: Arial;
+    font-size: small;
+    margin: 4px 17px;
+    display: none;
+}
+
+    .agregarLinea:hover {
+        background-color: #FF9D00;
+    }
+
+.invisible {
+    display: none;
+}
+
+.invisible2 {
+    display: none !important;
+}
+
+.lettersMenu {
+    color: #f99e24;
+    display: none;
+    float: right;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 1px 11px;
+}
+
+    .lettersMenu:hover {
+        color: #f99e24;
+    }
+
+.addDir {
+    display: none;
+}
+
+    .addDir:hover {
+        color: #DB7C00;
+    }
+
+.addDirViaje {
+    display: none;
+}
+
+    .addDirViaje:hover {
+        color: #DB7C00;
+    }
+
+.lettersMenu2 {
+    color: #f99e24;
+    display: block;
+    float: left;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 2px 20px;
+}
+
+    .lettersMenu2:hover {
+        color: #f99e24;
+    }
+
+.verViajes {
+    display: none;
+}
+
+    .verViajes:hover {
+        color: #DB7C00;
+    }
+
+.verViajesPasado {
+    display: none;
+}
+
+    .verViajesPasado:hover {
+        color: #DB7C00;
+    }
+
+.viajeSpan {
+    position: relative;
+}
+
+.todosViajesLk {
+    color: #fcb962;
+    font-size: 12px;
+    font-weight: bold;
+    left: 42px;
+    position: absolute;
+    top: 43px;
+}
+
+    .todosViajesLk:hover {
+        color: #fcb962;
+    }
+
+.soloPuestos {
+    font-size: 11px;
+}
+
+.agregarViajeDiv {
+    background-color: #eaf3f3;
+    border-radius: 7px;
+    box-shadow: 5px 5px 3px 1px #ccc;
+    height: auto;
+    margin: -4px auto -12px;
+    padding: 25px 8px 6px;
+    position: relative;
+    text-align: left;
+    width: 97%;
+}
+
+.selectViaje {
+    display: inline-block;
+    margin: 1px 0 6px 2px;
+    padding: 0 4px;
+    width: 220px;
+}
+
+.dateViaje {
+    display: inline-block;
+    height: 24px;
+    padding: 0 4px;
+    position: relative;
+    width: 388px;
+}
+
+.addPuestosBtn {
+    background-color: #ff5454;
+    border: 0 none;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    height: 25px;
+    margin: 0 0 0 488px;
+    width: 75px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .addDir {
+        margin: 1px 11px;
+    }
+}
+
+_:-ms-fullscreen, :root .addDir {
+    margin: 2px 11px;
+}
+/*html[lang='\
+en'] .addDir 
+{ margin: 2px 11px; }*/
+.closeX {
+    color: #777;
+    cursor: pointer;
+    float: right;
+    font-size: 13px;
+    margin: -8px -1px 0 0;
+    z-index: 999;
+}
+
+    .closeX:hover {
+        color: #000000;
+    }
+
+.closeviajeX {
+    color: #777;
+    cursor: pointer;
+    font-size: 13px;
+    position: absolute;
+    right: 5px;
+    top: 1px;
+}
+
+    .closeviajeX:hover {
+        color: #000000;
+    }
+/*@media screen and (-webkit-min-device-pixel-ratio:0) {
+   .closeX{
+    margin: -4px 703px;
+   }
+}*/
+/*_:-ms-input-placeholder, :root .closeX { margin: -4px 703px; }*/
+/*html[lang='\
+en'] .closeX 
+{ margin: -4px 703px; }*/
+/*@-moz-document url-prefix() { 
+  .closeX {
+     margin: -7px 11px;
+  }
+}*/
+.formConsulta {
+    height: 30px;
+    margin: 18px auto 4px;
+    padding: 8px 5px;
+    position: relative;
+    width: 460px;
+}
+
+.formCellConsulta {
+    height: 35px;
+    margin: 8px auto;
+    padding: 6px 4px;
+    text-align: left;
+    width: 305px;
+}
+
+.geoMarker {
+    float: right;
+    margin: 1px -23px;
+    width: 16px;
+}
+
+.radioMarker {
+    display: none;
+    margin: -2px 0 0 11px;
+    position: absolute;
+    width: 30px;
+    z-index: 99;
+}
+
+_:-ms-input-placeholder, :root .geoMarker {
+    border: none;
+    outline: none;
+}
+
+html[lang='\
+en'] .geoMarker, .mapIcon, .mapIconAll, .monitorIcon, .movilPic, .backIcon {
+    border: none;
+    outline: none;
+}
+
+.mapIconAll {
+    float: right;
+    margin: 1px 6px 0 0;
+    width: 25px;
+}
+
+#infoWindowNew {
+    width: 170px;
+    height: 50px;
+}
+
+#infoWindow {
+    height: auto;
+    width: 190px;
+}
+
+#infoWindowVisited {
+    height: auto;
+    width: 280px;
+}
+
+#infoWindowPos {
+    height: auto;
+    width: 250px;
+}
+
+.puestoName {
+    font-size: 13px;
+}
+
+.smallInfo {
+    font-size: 10px;
+}
+
+.movilLetters {
+    font-size: 11px;
+}
+
+.movilTitle {
+    font-size: 14px;
+    font-weight: 600;
+    font-family: Tahoma;
+    text-decoration: underline;
+}
+
+#infoWindowBig {
+    width: 280px;
+    height: 220px;
+}
+
+#infoWindowAll {
+    height: 280px;
+    width: 230px;
+    overflow: auto;
+}
+
+table.infoWindowTable {
+    font-family: Tahoma;
+    font-size: 12px;
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+    table.infoWindowTable td {
+        background-color: #fafafa;
+        border: 1px solid #ccc;
+        max-width: 6em;
+        padding: 2px 4px;
+        text-align: left;
+    }
+
+        table.infoWindowTable td span.titleInfo {
+            font-family: sans-serif;
+            font-size: 11px;
+            font-weight: 600;
+            text-decoration: none;
+            color: #777;
+        }
+
+span.infoTiendaTitle {
+    font-weight: bold;
+    font-family: Tahoma;
+}
+
+table.infoWindowTable2 {
+    font-family: Tahoma;
+    font-size: 12px;
+    margin-bottom: 10px;
+    width: 270px;
+}
+
+    table.infoWindowTable2 td {
+        background-color: #fafafa;
+        border: 1px solid #ccc;
+        max-width: 6em;
+        padding: 2px 4px;
+        text-align: left;
+    }
+
+        table.infoWindowTable2 td span.titleInfo {
+            color: #000;
+            font-family: arial;
+            font-size: 11px;
+            text-decoration: none;
+        }
+
+.blue {
+    color: #8991c6 !important;
+    font-weight: 900;
+}
+
+.movilEventBtn {
+    background-color: #f9a73b;
+    border: medium none;
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px 1px #ccc;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 300;
+    margin-top: 8px;
+    padding: 3px 6px;
+}
+
+    .movilEventBtn:hover {
+        box-shadow: 2px 2px 2px 3px #ccc;
+    }
+
+    .movilEventBtn:active {
+        margin-top: 9px;
+    }
+
+.infoIcons {
+    width: auto;
+    text-align: left;
+}
+
+.puestoInfoIcon {
+    margin-left: 16px;
+    width: 26px;
+}
+
+    .puestoInfoIcon:hover {
+        width: 28px;
+    }
+
+.alarmInfoIcon {
+    margin-left: 19px;
+    width: 23px;
+}
+
+    .alarmInfoIcon:hover {
+        width: 25px;
+    }
+
+.routeInfoIcon {
+    margin-left: 16px;
+    width: 26px;
+}
+
+    .routeInfoIcon:hover {
+        width: 28px;
+    }
+
+.invisible1 {
+    float: left;
+}
+
+.consultaIcon {
+    margin: -4px 2px;
+    width: 33px;
+}
+
+.alertFileError {
+    display: none;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 6px 3px 9px 7px #ccc;
+    height: 520px;
+    position: fixed;
+    width: 50%;
+    z-index: 9999;
+    -moz-box-shadow: 6px 3px 9px 7px #ccc;
+    -webkit-box-shadow: 6px 3px 9px 7px #ccc;
+}
+
+.imgHelpFile {
+    margin: 4px auto;
+    width: 85%;
+}
+
+.titleHelpDiv {
+    float: left;
+    margin: 10px 0 0 72px;
+}
+
+.helpSpan {
+    font-size: 12px;
+}
+
+.downloadExcel {
+    bottom: 5px;
+    color: #127a43;
+    font-family: Helvetica;
+    font-size: 13px;
+    font-weight: bold;
+    left: 13px;
+    position: absolute;
+}
+
+.excelImg {
+    float: left;
+    margin-left: 3px;
+    margin-right: 5px;
+    margin-top: -5px;
+}
+
+.closeAlertDiv {
+    cursor: pointer;
+    float: right;
+    font-family: tahoma;
+    font-size: 16px;
+    margin: 2px 8px;
+}
+
+    .closeAlertDiv:hover {
+        color: #b21414;
+    }
+
+.searchResults {
+    border: 1px dotted #97b8d8;
+    border-radius: 6px;
+    float: left;
+    height: 590px;
+    margin: 0 10px 3px;
+    padding: 4px;
+    text-align: left;
+    width: 50%;
+    overflow: auto;
+}
+/*TABLE*/
+.gridPoints {
+    background: none repeat scroll 0 0 #fff;
+    overflow: hidden;
+}
+
+.gridPoints {
+    margin-top: 28px;
+}
+
+    .gridPoints tr:nth-child(2n+1) {
+        background-color: #eaf3f3;
+    }
+
+    .gridPoints tr {
+        border: 1px solid #d9e4e6;
+    }
+
+    .gridPoints th, .gridPoints td {
+        display: table-cell;
+        padding: 1em;
+    }
+
+    .gridPoints th, .gridPoints td {
+        margin: 0.5em 1em;
+        text-align: left;
+    }
+
+    .gridPoints th {
+        background-color: #7aa3c9;
+        border: 1px solid #fff;
+        color: #fff;
+        display: none;
+        padding: 1em;
+    }
+
+    .gridPoints td:first-child {
+        border-right: 1px solid #d9e4e6;
+        display: table-cell;
+    }
+
+    .gridPoints th, .gridPoints td {
+        display: table-cell;
+        padding: 1em;
+    }
+
+    .gridPoints th, .gridPoints td {
+        margin: 0.5em 1em;
+        text-align: left;
+    }
+
+    .gridPoints td {
+        border: 1px solid #d9e4e6;
+    }
+
+    .gridPoints td {
+        max-width: 7em;
+        word-wrap: break-word;
+    }
+
+.radioContainer {
+    color: #777;
+    float: left;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: -1px;
+    width: auto;
+    margin-left: 4px;
+}
+
+.estadoRb {
+    opacity: 0.70;
+    display: inline-block;
+}
+
+.puestosClienteDiv {
+    display: none;
+    height: 230px;
+    margin: 2px auto;
+    width: 630px;
+}
+
+.gridCliente {
+    background: none repeat scroll 0 0 #fff;
+    margin: 4px auto;
+    overflow: hidden;
+    width: 100%;
+}
+
+    .gridCliente tr:nth-child(2n+1) {
+        background-color: #f7dc91;
+    }
+
+    .gridCliente tr {
+        border: 1px solid #d9e4e6;
+    }
+
+    .gridCliente th, .gridCliente td {
+        display: table-cell;
+        padding: 2px 8px;
+        border: 1px solid #ccc;
+    }
+
+/*table CSS*/
+.gridRoutes {
+    background: none repeat scroll 0 0 #fff;
+    border-radius: 10px;
+    margin-top: 2em;
+    overflow: hidden;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.gridRoutes {
+    color: #024457;
+}
+
+    .gridRoutes tr:nth-child(2n+1) {
+        background-color: #eaf3f3;
+    }
+
+    .gridRoutes tr {
+        border: 1px solid #d9e4e6;
+    }
+
+    .gridRoutes th, .gridRoutes td {
+        display: table-cell;
+        padding: 1em;
+    }
+
+    .gridRoutes th, .gridRoutes td {
+        margin: 0.5em 1em;
+        text-align: left;
+    }
+
+    .gridRoutes th {
+        background-color: #97B8D8;
+        border: 1px solid #fff;
+        color: #fff;
+        display: none;
+        padding: 1em;
+    }
+
+    .gridRoutes td:first-child {
+        border-right: 1px solid #d9e4e6;
+        display: table-cell;
+        text-align: center;
+    }
+
+    .gridRoutes th, .gridRoutes td {
+        display: table-cell;
+        padding: 2px 4px;
+    }
+
+    .gridRoutes th, .gridRoutes td {
+        margin: 0.5em 1em;
+        text-align: center;
+    }
+
+    .gridRoutes td {
+        border: 1px solid #d9e4e6;
+    }
+
+    .gridRoutes td {
+        max-width: 8em;
+        word-wrap: break-word;
+    }
+
+.viajesSearch {
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #d9e4e6;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    color: #024457;
+    margin: 1em 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+.viajesSearch {
+    color: #024457;
+}
+
+    .viajesSearch tr:nth-child(2n+1) {
+        background-color: #eaf3f3;
+    }
+
+    .viajesSearch tr {
+        border: 1px solid #d9e4e6;
+    }
+
+    .viajesSearch th, .viajesSearch td {
+        display: table-cell;
+        padding: 1em;
+    }
+
+    .viajesSearch th, .viajesSearch td {
+        margin: 0.5em 1em;
+        text-align: left;
+    }
+
+    .viajesSearch th {
+        background-color: #97B8D8;
+        border: 1px solid #fff;
+        color: #fff;
+        display: none;
+        padding: 1em;
+    }
+
+    .viajesSearch td:first-child {
+        border-right: 1px solid #d9e4e6;
+        display: table-cell;
+        text-align: center;
+    }
+
+    .viajesSearch th, .viajesSearch td {
+        display: table-cell;
+        padding: 1em;
+    }
+
+    .viajesSearch th, .viajesSearch td {
+        margin: 0.5em 1em;
+        text-align: left;
+    }
+
+    .viajesSearch td {
+        border: 1px solid #d9e4e6;
+    }
+
+    .viajesSearch td {
+        max-width: 7em;
+        word-wrap: break-word;
+    }
+
+td, th {
+    padding: 2px;
+}
+
+.rutaButton {
+    background-color: #4F81B6;
+    border-color: #777777;
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 1px;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    padding: 0px 4px;
+}
+
+.rutaTextButton {
+    font-family: Tahoma;
+    font-size: 12px;
+    padding: 1px 10px;
+}
+/*table END*/
+.viajesActivos {
+    display: none;
+    background-color: #ffffff;
+    box-shadow: 2px 4px 5px 2px #777;
+    margin: 10px 0 0 155px;
+    position: absolute;
+    z-index: 9999999;
+}
+
+.viajesPasados {
+    display: none;
+    background-color: #ffffff;
+    box-shadow: 2px 4px 5px 2px #777;
+    margin: 10px 0 0 300px;
+    position: absolute;
+    z-index: 9999999;
+}
+
+.viajesGrid {
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #167f92;
+    border-radius: 10px;
+    color: #024457;
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+.viajesGrid {
+    color: #555557;
+}
+
+    .viajesGrid tr:nth-child(2n+1) {
+        background-color: #eaf3f3;
+    }
+
+    .viajesGrid tr {
+        border: 1px solid #d9e4e6;
+    }
+
+    .viajesGrid th, .gridPoints td {
+        display: table-cell;
+        padding: 1em;
+    }
+
+    .viajesGrid th, .gridPoints td {
+        margin: 0.5em 1em;
+        text-align: left;
+    }
+
+    .viajesGrid th {
+        background-color: #f7be74;
+        border: 1px solid #fff;
+        color: #fff;
+        display: none;
+        padding: 1em;
+    }
+
+.pasado th {
+    background-color: #F7C788;
+    border: 1px solid #fff;
+    color: #fff;
+    display: none;
+    padding: 1em;
+}
+
+.viajesGrid td:first-child {
+    border-right: 1px solid #d9e4e6;
+    display: table-cell;
+    text-align: center;
+}
+
+.viajesGrid th, .gridPoints td {
+    display: table-cell;
+    padding: 4px;
+}
+
+.viajesGrid th, .gridPoints td {
+    margin: 0.5em 1em;
+    text-align: left;
+}
+
+.viajesGrid td {
+    border: 1px solid #d9e4e6;
+}
+
+.viajesGrid td {
+    max-width: 11em;
+    word-wrap: break-word;
+}
+/*FOOTER*/
+.footer {
+    background-color: #242633;
+    font-size: 12px;
+    padding: 10px 0;
+    color: #767676;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.infoSite {
+    margin-left: 4px;
+    margin-top: -3px;
+    position: absolute;
+    width: 22px;
+}
+
+    .infoSite:hover {
+        cursor: pointer;
+    }
+
+.importantInfo {
+    display: none;
+    float: right;
+    font-size: 11px;
+    height: 43px;
+    margin: -44px 7px;
+    overflow-y: auto;
+    text-align: left;
+    width: 40%;
+}
+/*END FOOTER*/
+
+/********************
+*   Dashboard Styles   *
+********************/
+.dashForm {
+    background-color: #fff;
+    box-shadow: 7px 3px 9px #888888;
+    margin: 20px auto 3px;
+    min-height: 200px;
+    padding: 5px 5px;
+}
+
+.mapFormDash {
+    margin-top: 5px;
+}
+
+h1.dashTitle {
+    float: left;
+    font-family: Lucida Console;
+    font-size: 25px;
+    margin: 66px 0 0 -51px;
+    text-decoration: underline;
+}
+
+.horizontalContainer {
+    background-color: #FFF;
+    box-shadow: 0 0 2px 0 #777777;
+    height: 160px;
+    margin: -2px 0 0 2px;
+    padding: 2px 4px;
+    width: auto;
+}
+
+.verticalContainer {
+    background-color: #fff;
+    float: left;
+    margin: 4px 4px 0 2px;
+    height: 608px;
+    width: 500px;
+    overflow-y: auto;
+}
+
+.puestosRutaDash {
+    height: auto;
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+.rotate {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+table.gridPuestos {
+    background: none repeat scroll 0 0 #fafafa;
+    color: #777;
+    font-family: Microsoft Sans Serif;
+    font-size: 14px;
+    margin: 8px auto;
+    width: 98%;
+}
+
+    table.gridPuestos th {
+        background-color: #8991c6;
+        border: 1px solid #515ba5;
+        color: #fff;
+        font-size: 18px;
+        font-weight: initial;
+        padding: 3px 2px;
+    }
+
+    table.gridPuestos td {
+        border: 1px solid #515BA5;
+        font-size: 11px;
+        padding: 2px 8px;
+        text-align: left;
+    }
+
+    table.gridPuestos tr:not(:first-child):hover {
+        background-color: #FFECA0;
+        color: #777;
+        cursor: pointer;
+    }
+
+.viajesActivosDash {
+    height: auto;
+    max-height: 140px;
+    overflow-y: auto;
+}
+
+table.gridViajes {
+    background: none repeat scroll 0 0 #f9a73b;
+    color: #ffffff;
+    font-family: Microsoft Sans Serif;
+    font-size: 14px;
+    margin: 20px auto 2px;
+    width: 98%;
+}
+
+    table.gridViajes th {
+        border: 1px solid #ffc06d;
+        color: #fff;
+        font-size: 18px;
+        font-weight: initial;
+        padding: 3px 2px;
+    }
+
+    table.gridViajes td {
+        border: 1px solid #ffc06d;
+        font-size: 11px;
+        padding: 2px 8px;
+        text-align: center;
+    }
+
+.alarmasDash {
+    display: none;
+    height: 300px;
+    margin-top: 14px;
+    overflow-y: auto;
+}
+
+table.gridAlarmas {
+    background: none repeat scroll 0 0 #fafafa;
+    color: #777;
+    font-family: Microsoft Sans Serif;
+    font-size: 14px;
+    margin: 4px auto;
+    width: 98%;
+}
+
+    table.gridAlarmas th {
+        background-color: #fc4e5c;
+        border: 1px solid #ec1d31;
+        color: #fff;
+        font-size: 18px;
+        font-weight: initial;
+        padding: 3px 2px;
+    }
+
+    table.gridAlarmas td {
+        border: 1px solid #ec1d31;
+        font-size: 12px;
+        padding: 2px 8px;
+        text-align: center;
+    }
+
+    table.gridAlarmas tr:not(:first-child):hover {
+        background-color: #FFECA0;
+        color: #777;
+        cursor: pointer;
+    }
+
+.notiDash {
+    height: 300px;
+    overflow-y: auto;
+    margin-top: 20px;
+}
+
+table.gridNoti {
+    background: none repeat scroll 0 0 #fafafa;
+    color: #777;
+    font-family: Microsoft Sans Serif;
+    font-size: 14px;
+    margin: 4px auto;
+    width: 98%;
+}
+
+    table.gridNoti th {
+        background-color: #28b779;
+        border: 1px solid #178C57;
+        color: #fff;
+        font-size: 18px;
+        font-weight: initial;
+        padding: 3px 2px;
+    }
+
+    table.gridNoti td {
+        border: 1px solid #178c57;
+        font-size: 12px;
+        padding: 2px 8px;
+        text-align: center;
+    }
+
+    table.gridNoti tr:not(:first-child):hover {
+        background-color: #FFECA0;
+        color: #777;
+        cursor: pointer;
+    }
+
+.loader {
+    display: none;
+}
+
+.loader2 {
+    display: none;
+}
+
+#infoloader {
+    display: none;
+    text-align: center;
+    width: 25px;
+    margin: 12px auto;
+}
+
+#chart_div {
+    float: left;
+    margin: 3px 6px 0 -35px;
+}
+
+#piechart {
+    float: left;
+    margin: 1px 10px 0 -45px;
+    display: none;
+}
+
+#chart_bar {
+    float: left;
+    margin: 8px 6px 0 50px;
+}
+
+.timeInfo {
+    float: left;
+    margin: 8px 0 0 84px;
+    text-align: left;
+    width: 280px;
+}
+
+.timeLetters {
+    float: left;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777;
+    padding-top: 1px;
+}
+
+.lastTimer {
+    display: block;
+    height: 24px;
+    padding: 2px 1px;
+}
+
+.tick2cl {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #777;
+    font-weight: 700;
+}
+
+#currentPos {
+    color: #777;
+    display: inline-block;
+    font-family: 'Lucida Console';
+    font-size: 13px;
+    height: 50px;
+    margin-top: -2px;
+    overflow: auto;
+    padding: 2px 6px;
+    width: 144px;
+}
+
+#movilId, #planRuta {
+    font-size: 14px;
+    font-family: Tahoma;
+    color: #777;
+    padding: 2px 6px;
+}
+
+.lastTimer2 {
+    display: block;
+    padding: 13px 0 0;
+}
+
+.currentPosImg {
+    cursor: pointer;
+    margin: -3px 30px;
+    position: absolute;
+    width: 24px;
+    z-index: 999;
+}
+
+.movilPic {
+    cursor: pointer;
+    margin: -4px 38px;
+    position: absolute;
+    width: 24px;
+    z-index: 0;
+}
+
+.conductorPic {
+    cursor: pointer;
+    margin: -1px 9px;
+    position: absolute;
+    width: 18px;
+    z-index: 0;
+}
+
+.moreInfo {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    color: #777;
+    display: none;
+    height: 50px;
+    overflow-y: auto;
+    padding: 8px;
+    float: right;
+    width: 155px;
+    z-index: 99;
+    margin: -36px -90px 0px 0px;
+}
+
+.headerIconMenu {
+    float: left;
+    margin: 2px 0 0 16px;
+    width: 25%;
+}
+
+.iconContainer {
+    height: 80px;
+    margin: 1px 4px 0 18%;
+    position: relative;
+    width: 90%;
+}
+
+.buttonIcon {
+    background-color: #f0ede5;
+    border: 1px solid #8f8f93;
+    border-radius: 5px 20px;
+    cursor: pointer;
+    float: left;
+    height: 65px;
+    margin: 1px 10% 0 8px;
+    text-align: center;
+    width: 18%;
+}
+
+    .buttonIcon:hover {
+        box-shadow: 2px 2px 2px 2px #ccc;
+    }
+
+    .buttonIcon:active {
+        box-shadow: 1px 1px 1px 1px #ccc;
+    }
+
+    .buttonIcon span {
+        position: relative;
+        font-family: Segoe UI;
+        font-size: 12px;
+    }
+
+.showRoute {
+    display: block;
+    margin: 2px auto;
+    width: 44px;
+}
+
+.alarmsView {
+    display: block;
+    margin: 3px auto -3px;
+    width: 40px;
+}
+
+.reloadButton {
+    display: block;
+    margin: 2px auto;
+    width: 36px;
+}
+
+.plusIcon {
+    display: block;
+    margin: 2px auto;
+    width: 36px;
+}
+
+.legendIcon {
+    display: block;
+    margin: 2px auto;
+    width: 36px;
+}
+
+.backIcon {
+    display: block;
+    margin: 2px auto;
+    width: 36px;
+}
+
+.DateCountdown {
+    background-color: #f0ede5;
+    box-sizing: border-box;
+    display: none;
+    height: 98px;
+    padding: 0;
+    position: absolute;
+    width: 306px;
+    z-index: 999;
+}
+
+    .DateCountdown h4 {
+        font-size: 9px !important;
+    }
+
+.CountDownTimer {
+    display: inline-block;
+    margin: -42px 0 0 267px;
+    box-sizing: border-box;
+    height: 40px;
+    padding: 0;
+    width: 40px;
+    position: absolute;
+}
+
+    .CountDownTimer h4 {
+        display: none !important;
+    }
+
+    .CountDownTimer span {
+        font-size: 11px !important;
+    }
+
+.clockIcon {
+    width: 40px;
+    margin: -10px 0 0 6px;
+}
+
+    .clockIcon:hover {
+        cursor: pointer;
+    }
+
+.clockIconPoints {
+    margin: -8px 0px 7px 6px;
+    width: 27px;
+}
+
+    .clockIconPoints:hover {
+        cursor: pointer;
+    }
+
+.towerLoad {
+    display: none;
+    width: 25px;
+}
+
+.simIcon {
+    display: none;
+    margin: -14px 0 0 60px;
+    position: absolute;
+    width: 51px;
+}
+
+    .simIcon:hover {
+        cursor: pointer;
+    }
+
+#directions_panel {
+    background-color: #ffee77;
+    top: 0px;
+    display: none;
+    height: 100%;
+    opacity: 0.9;
+    overflow-y: auto;
+    padding: 2px 8px;
+    position: fixed;
+    right: 0;
+    width: 331px;
+    z-index: 9999;
+}
+
+    #directions_panel #closeDirections {
+        font-size: 16px;
+        right: 11px;
+        top: 8px;
+        position: absolute;
+        cursor: pointer;
+    }
+
+        #directions_panel #closeDirections:hover {
+            font-size: 15px;
+        }
+
+.timerPoints {
+    background-color: #383944;
+    border-radius: 8px;
+    display: none;
+    height: 614px;
+    opacity: 0.9;
+    overflow-y: auto;
+    padding: 5px 14px;
+    position: fixed;
+    right: -6px;
+    top: 28%;
+    width: 234px;
+    z-index: 200;
+}
+
+h3.titlePorcentaje1 {
+    color: #fafafa;
+    font-family: Tahoma;
+    font-size: 15px;
+    margin-top: 1px;
+}
+
+.timerPoints span {
+    font-size: 11px;
+    color: #777777;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.timerCirclePoint {
+    background-color: #fafafa;
+    display: inline-block;
+    height: 98px;
+    margin: -8px 1px 1px 4px;
+    padding: 2px 26px 2px 10px;
+    width: 170px;
+}
+
+.timerCirclePoint2 {
+    background-color: #fafafa;
+    display: inline-block;
+    height: 110px;
+    margin: 5px 2px 25px 5px;
+    padding: 2px 26px 2px 10px;
+    width: 170px;
+}
+
+.legends {
+    background-color: #242633;
+    display: none;
+    height: auto;
+    opacity: 0.9;
+    position: fixed;
+    right: 0;
+    bottom: 30px;
+    width: 221px;
+    z-index: 200;
+    padding: 5px 10px;
+}
+
+.legendImg {
+    width: 20px;
+    display: inline-block;
+}
+
+.legendsDiv span {
+    display: inline-block;
+    font-family: Segoe UI;
+    font-size: 14px;
+    padding: 2px 2px;
+}
+
+.legendsDiv {
+    background-color: #fafafa;
+    width: 250px;
+}
+
+    .legendsDiv ul {
+        list-style: none outside none;
+        margin: 4px 6px;
+        padding-left: 0px;
+        text-align: left;
+    }
+
+        .legendsDiv ul li {
+            margin: 2px 4px;
+        }
+
+.simulateDiv {
+    display: block;
+    background-color: #cadfaa;
+    border: 1px solid #fcaf36;
+    border-radius: 5px;
+    top: 300px;
+    display: none;
+    height: 32px;
+    opacity: 0.9;
+    padding: 5px 10px;
+    position: fixed;
+    right: -6px;
+    width: 221px;
+    z-index: 100;
+}
+
+    .simulateDiv span {
+        color: #777;
+        font-family: Roboto;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+.listBoxStyle {
+    width: 198px;
+    border: 1px solid #ccc;
+    height: 50px !important;
+}
+
+/*DASHBOARD end****/
+
+/*REPORTS Style*/
+.reportForm {
+    background-color: #fff;
+    box-shadow: 7px 3px 9px #888888;
+    margin: 10px auto 8px;
+    min-height: 200px;
+    padding: 5px 5px;
+}
+
+h1.reportTitle {
+    float: left;
+    font-family: Lucida Console;
+    font-size: 33px;
+    margin: 108px 0 0 -55px;
+    text-decoration: underline;
+}
+
+.horizontalContainer2 {
+    background-color: #FFF;
+    box-shadow: 0 0 2px 0 #777777;
+    height: 259px;
+    margin: -2px 0 0 2px;
+    padding: 2px 4px;
+    width: auto;
+}
+
+.fullcontainer {
+    width: 100%;
+    min-height: 511px;
+    margin-top: 13px;
+}
+
+.verticalContainer2 {
+    background-color: #fff;
+    display: none;
+    float: left;
+    margin: 4px 4px 0 2px;
+    height: 500px;
+    overflow-y: auto;
+    width: 45%;
+}
+
+h3.titlePorcentaje {
+    font-family: Tahoma;
+    font-size: 15px;
+    margin-top: 1px;
+}
+
+.mapFormReport {
+    margin-top: 5px;
+    min-height: 410px;
+}
+
+.searchDiv {
+    float: left;
+    font-family: Segoe UI;
+    font-size: 13px;
+    margin: -15px 10px 0 -22px;
+    min-height: 200px;
+    padding: 10px 6px;
+    text-align: left;
+    width: 28%;
+}
+
+.formCellConsultaLeft1 {
+    margin: 70px 5px 10px;
+    width: auto;
+}
+
+.formCellConsultaLeft {
+    margin: 2px 5px 10px;
+    width: auto;
+}
+
+.selectContainerReport {
+    display: inline-block;
+    margin: -19px 0 0 18px;
+}
+
+    .selectContainerReport input, .selectContainerReport select {
+        font-family: Tahoma;
+        font-size: 12px;
+    }
+
+.loadReport {
+    background-color: #f9a73b;
+    border: 0 none;
+    box-shadow: 1px 2px 1px 0 #cccccc;
+    color: #fff;
+    font-family: verdana;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 3px 10px;
+}
+
+    .loadReport:hover {
+        cursor: pointer;
+    }
+
+    .loadReport:active {
+        padding: 4px 11px;
+    }
+
+.viajesActivosReport {
+    display: none;
+    height: 240px;
+    margin: 10px 1px 2px 0;
+    overflow-y: auto;
+}
+
+table.gridViReport {
+    font-family: Microsoft Sans Serif;
+    margin: 10px auto;
+    width: 98%;
+}
+
+    table.gridViReport th {
+        background: none repeat scroll 0 0 #f9a73b;
+        border: 1px solid #ffc06d;
+        color: #fff;
+        font-size: 12px;
+        font-weight: initial;
+        padding: 2px;
+    }
+
+    table.gridViReport td {
+        border: 1px solid #ffc06d;
+        color: #8f8f93;
+        font-size: 11px;
+        padding: 2px 4px;
+        text-align: left;
+    }
+
+    table.gridViReport tr:not(:first-child):hover {
+        background-color: #FFECA0;
+        color: #777;
+        cursor: pointer;
+    }
+
+.chartsDivReports {
+    float: left;
+    height: 254px;
+    margin: 2px 0 0 8px;
+    overflow-y: auto;
+    width: 66%;
+}
+
+.chartReport {
+    float: left;
+}
+
+#chart_global {
+    margin: 2px 2px 0 -40px;
+}
+
+#chart_entregas {
+    margin: 2px 40px 0px 40px;
+}
+
+#piechart_global {
+    margin: 8px 4px 0 9px;
+}
+
+#selectClient {
+    color: #f9a73b;
+    font-family: Verdana;
+    font-size: 11px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+    #selectClient:hover {
+        text-decoration: underline;
+    }
+
+.percentageCircles {
+    border: 1px dotted #ccc;
+    border-radius: 5px;
+    height: 154px;
+    margin: 10px 0 0 18px;
+    overflow-x: auto;
+    position: relative;
+    text-align: center;
+    width: auto;
+}
+
+.containerCircle {
+    display: inline-block;
+    margin: 0 4px;
+    width: 120px;
+}
+
+.circle {
+    display: inline-block;
+    height: 110px;
+    margin-top: 2px;
+    position: relative;
+    text-align: center;
+    width: 110px;
+}
+
+    .circle canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+.percent {
+    display: inline-block;
+    line-height: 110px;
+    z-index: 2;
+}
+
+    .percent:after {
+        content: '%';
+        margin-left: 0.1em;
+        font-size: .8em;
+    }
+
+.placaMovil {
+    color: #000;
+    display: block;
+    font-family: Segoe UI;
+    font-size: 17px;
+    margin-top: -5px;
+    z-index: 2;
+}
+
+.timerCircles {
+    border: 1px dotted #ccc;
+    border-radius: 5px;
+    height: 154px;
+    margin: 10px 0 0 18px;
+    overflow-x: auto;
+    position: relative;
+    text-align: center;
+    width: auto;
+    display: none;
+}
+
+.timerCircle {
+    display: inline-block;
+    height: 130px;
+    width: 180px;
+    margin: 2px 2px 2px 5px;
+}
+
+.placaMovilTimerRed {
+    color: #F53040;
+    font-family: Segoe UI;
+    font-size: 13px;
+    margin-top: -5px;
+    z-index: 2;
+}
+
+.placaMovilTimer {
+    color: #60686F;
+    font-family: Segoe UI;
+    font-size: 13px;
+    margin-top: -5px;
+    z-index: 2;
+}
+
+.showPercent, .showTimer {
+    cursor: pointer;
+    position: absolute;
+    right: 2px;
+    top: -1px;
+    width: 15px;
+}
+
+.graficoAperturas {
+    margin: 10px auto;
+    position: relative;
+}
+
+.legendsAlarms {
+    background-color: #242633;
+    display: none;
+    height: auto;
+    opacity: 0.9;
+    position: fixed;
+    right: 0;
+    bottom: 30px;
+    width: 277px;
+    z-index: 200;
+    padding: 5px 10px;
+}
+
+.legendsAlarms2 {
+    background-color: #242633;
+    display: none;
+    height: auto;
+    opacity: 0.9;
+    position: fixed;
+    right: 0;
+    bottom: 30px;
+    width: 221px;
+    z-index: 200;
+    padding: 5px 10px;
+}
+
+.titleAlarm {
+    font-family: Tahoma;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.loadAlarm {
+    background-color: #f9a73b;
+    border: 0 none;
+    box-shadow: 1px 2px 1px 0 #cccccc;
+    color: #fff;
+    font-family: verdana;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px 2px;
+    padding: 1px 7px;
+}
+
+    .loadAlarm:hover {
+        cursor: pointer;
+    }
+
+#setAlarmsButton {
+    color: #fa9e25;
+    cursor: pointer;
+    display: none;
+    float: right;
+    font-family: Tahoma;
+    font-size: 12px;
+    margin: -2px 43px 0 0;
+}
+
+    #setAlarmsButton:hover {
+        text-decoration: underline;
+    }
+
+.menuChart {
+    height: 21px;
+    float: right;
+    width: 185px;
+    margin: 48px 150px 0 0;
+}
+
+#setAlarmsButton3 {
+    color: #fa9e25;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Tahoma;
+    font-size: 11px;
+}
+
+    #setAlarmsButton3:hover {
+        text-decoration: underline;
+    }
+
+#setAlarmsButton2 {
+    color: #fa9e25;
+    cursor: pointer;
+    font-family: Tahoma;
+    font-size: 12px;
+    position: absolute;
+    right: 72px;
+    top: 300px;
+}
+
+    #setAlarmsButton2:hover {
+        text-decoration: underline;
+    }
+
+#setTemperatura {
+    color: #fa9e25;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Tahoma;
+    font-size: 11px;
+    padding-right: 7px;
+}
+
+    #setTemperatura:hover {
+        text-decoration: underline;
+    }
+
+#hideTemperatura {
+    color: #fa9e25;
+    cursor: pointer;
+    display: block;
+    float: right;
+    font-family: Tahoma;
+    font-size: 11px;
+    margin: 127px 166px 0 0;
+}
+
+.xClose {
+    color: #fafafa;
+    cursor: pointer;
+    font-size: 17px !important;
+    right: 10px;
+    position: absolute;
+    z-index: 999;
+    top: -1px;
+}
+
+    .xClose:hover {
+        color: #ccc;
+    }
+
+.xClose2 {
+    color: #fafafa;
+    cursor: pointer;
+    font-size: 17px !important;
+    right: 10px;
+    position: absolute;
+    z-index: 999;
+    top: -1px;
+}
+
+    .xClose2:hover {
+        color: #ccc;
+    }
+
+.xCloseLegend {
+    color: #fafafa;
+    cursor: pointer;
+    font-size: 17px !important;
+    right: 10px;
+    position: absolute;
+    z-index: 999;
+    top: -1px;
+}
+
+    .xCloseLegend:hover {
+        color: #ccc;
+    }
+
+.getAllPositions {
+    color: #f99e24;
+    display: block;
+    float: right;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 0px 16px;
+    cursor: pointer;
+}
+
+.seeNotificaciones {
+    color: #f99e24;
+    cursor: pointer;
+    display: none;
+    float: left;
+    font-family: sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    margin: 0px 16px 0;
+}
+
+.seeAlarms {
+    color: #f99e24;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-family: sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    margin: 0px 16px 0;
+}
+
+.getBack {
+    color: #f99e24;
+    display: none;
+    float: right;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 0px 16px;
+    cursor: pointer;
+}
+
+.mapIconTruck {
+    background-color: #f0ede5;
+    border-color: #9abffd;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    display: inline-block;
+    height: 30px;
+    margin: 0 4px 0 6px;
+    opacity: 0.78;
+    padding: 1px 4px;
+    text-align: center;
+    width: 40px;
+}
+
+.prIdcolor {
+    color: #FAFAFA;
+}
+
+.temperatureReportDiv {
+    height: 26px;
+    margin: -14px 0 0 50px;
+    position: absolute;
+    width: auto;
+}
+
+.excelContainer {
+    display: inline-block;
+    position: absolute;
+}
+
+.pdfContainer {
+    float: left;
+    width: 5px;
+}
+
+.viewReportBtn {
+    display: inline-block;
+    width: 26px;
+    padding-left: 10px;
+}
+
+.viewReportBtn2 {
+    width: 29px;
+    display: inline-block;
+    margin-left: 22px;
+    margin-top: -5px;
+}
+
+.viewReportBtn3 {
+    width: 28px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-right: 18px;
+}
+
+.titleReport {
+    font-size: 11px;
+    margin-top: 4px;
+    color: #777777;
+    font-weight: bold;
+}
+
+.updateRadio {
+    float: left;
+    display: none;
+}
+
+.txtRadio {
+    width: 45px;
+}
+
+.jjreport {
+    display: inline-block;
+}
+
+.puestoEditIcon {
+    cursor: pointer;
+    float: right;
+    color: #E59630;
+    font-size: 13px;
+    text-decoration: underline;
+    margin-left: 10px;
+}
+
+#truckIcon {
+    margin: -2px 4px;
+    width: 29px;
+}
+
+html[lang='\
+en'] #truckIcon {
+    height: 29px;
+}
+
+#alertIcon {
+    width: 24px;
+}
+
+html[lang='\
+en'] #alertIcon {
+    height: 24px;
+}
+
+#puestoIcon {
+    width: 24px;
+}
+
+html[lang='\
+en'] #puestoIcon {
+    height: 24px;
+}
+
+#routeIcon {
+    width: 24px;
+}
+
+html[lang='\
+en'] #routeIcon {
+    height: 24px;
+}
+
+#saveIcon {
+    width: 24px;
+}
+
+html[lang='\
+en'] #saveIcon {
+    height: 24px;
+}
+
+#watchIcon {
+    width: 24px;
+}
+
+html[lang='\
+en'] #watchIcon {
+    height: 24px;
+}
+
+#tempIcon {
+    width: 13px;
+}
+
+#geoIcon {
+    width: 25px;
+}
+
+#trafficIcon {
+    width: 25px;
+}
+
+#motoIcon {
+    width: 25px;
+}
+
+#monitorIcon {
+    width: 25px;
+}
+
+#circleIcon {
+    width: 25px;
+}
+
+.dashContainer {
+    left: 65px !important;
+}
+
+.dashContainer2 {
+    left: 252px !important;
+    bottom: 6px !important;
+}
+
+.labels {
+    color: #000;
+    background-color: white;
+    font-family: "Lucida Grande", "Arial", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    width: auto;
+    border: 1px solid #777;
+    white-space: nowrap;
+    padding: 2px;
+}
+
+.helpIcon {
+    position: absolute;
+    right: -78px;
+    top: 16px;
+}
+
+.helpImg {
+    width: 22px;
+}
+
+.helpCenter {
+    background-color: #ffffff;
+}
+
+.manualContainer {
+    font-family: Verdana;
+    font-size: 17px;
+    height: 42px;
+    margin: 20px 10px;
+    padding: 10px 62px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.pdfImg {
+    width: 30px;
+}
+
+.tableHelp {
+    margin-top: 30px;
+    min-height: 400px;
+    padding: 22px 4px 12px;
+    width: 100%;
+}
+/********************
+*   Mobile Styles   *
+********************/
+@media only screen and (min-width : 1400px) {
+    .chartsDiv {
+        float: left;
+        margin: 2px 0 0 10px;
+        width: 48%;
+    }
+
+    .tempContainer {
+        float: left;
+        margin: 2px 0 0 -22px;
+        width: 48%;
+        display: none;
+    }
+
+    .timeInfo {
+        float: left;
+        margin: 8px 0 0 5px;
+        text-align: left;
+        width: 280px;
+    }
+
+    .headerIconMenu {
+        margin: 2px 0 0 -14px;
+    }
+
+    .menuChart {
+        margin: 49px 180px 0 0;
+    }
+
+    #hideTemperatura {
+        margin: 0px 296px 0 0;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .timeInfo {
+        width: 243px;
+        margin: 8px 0 0 72px;
+    }
+
+    .headerIconMenu {
+        width: 21%;
+        margin: 2px 0 0 -15px;
+    }
+
+    .menuChart {
+        margin: 48px 75px 0 0;
+    }
+
+    #hideTemperatura {
+        margin: 0px 297px 0 0;
+    }
+
+    .verticalContainer {
+        width: 360px;
+    }
+
+    .timerPoints {
+        height: 500px;
+    }
+
+    .chartReport {
+        width: 550px !important;
+    }
+
+    #chart_global {
+        width: 300px !important;
+        margin: 2px 2px 0 -65px;
+    }
+
+    .chartsDivReports {
+        width: 65%;
+    }
+
+    .CountDownTimer {
+        margin: -41px 0 0px 186px;
+    }
+
+    .chartsDiv {
+        float: left;
+        height: 149px;
+        margin: 2px 0 0 -7px;
+        position: relative;
+        width: 46%;
+    }
+
+    .tempContainer {
+        display: none;
+        float: left;
+        height: 149px;
+        margin: 2px 52px 0 -55px;
+        position: relative;
+        width: 46%;
+    }
+
+    .buttonIcon {
+        margin: 1px 8% 0 1px;
+    }
+
+    .viewReportBtn2 {
+        margin-right: 0;
+        margin-top: -1px;
+        width: 22px;
+    }
+
+    .lastTimer2 {
+        display: block;
+        padding: 2px 0 0;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .horizontalContainer {
+        height: auto;
+    }
+
+    .chartsDiv {
+        display: inline-block;
+        float: none;
+        height: 149px;
+        margin: 2px 0 0 -33px;
+        position: relative;
+        width: 70%;
+    }
+
+    .tempContainer {
+        display: none;
+        float: left;
+        height: 149px;
+        margin: 8px auto;
+        position: relative;
+        width: 70%;
+    }
+
+    .timeInfo {
+        display: inline-block;
+        float: none;
+        height: 150px;
+        margin: 4px 0 0 10px;
+        position: relative;
+        text-align: left;
+        width: 355px;
+    }
+
+    .headerIconMenu {
+        display: inline-block;
+        float: none;
+        height: 150px;
+        margin: 2px 0 0 12px;
+        position: relative;
+        width: 315px;
+    }
+
+    .verticalContainer {
+        background-color: #fff;
+        float: none;
+        height: 300px;
+        margin: 4px auto 2px;
+        overflow-y: auto;
+        width: 90%;
+        position: relative;
+        display: block;
+    }
+
+    .moreInfo {
+        margin: -36px -8px 0 0;
+        width: 127px;
+    }
+
+    .chartsDivReports {
+        width: 60%;
+    }
+
+    .viajesPasados {
+        margin: 10px 0 0 84px;
+    }
+
+    .viajesActivos {
+        margin: 10px 0 0 26px;
+    }
+
+    .lettersMenu {
+        margin: 1px 5px;
+    }
+}
+
+@media only screen and (max-width : 800px) {
+
+    .settingsroute {
+        width: 90%;
+        height: 324px;
+        position: relative;
+        float: none;
+        margin: 10px auto;
+    }
+
+    #map_canvas {
+        height: 240px !important;
+        overflow: hidden;
+        position: relative;
+        width: 99% !important;
+    }
+
+    .horizontalContainer {
+        background-color: #fff;
+        box-shadow: 0 0 2px 0 #777777;
+        height: auto;
+        margin: -2px 0 0 2px;
+        padding: 2px 4px;
+        width: auto;
+    }
+
+    .horizontalContainer2 {
+        background-color: #fff;
+        box-shadow: 0 0 2px 0 #777777;
+        height: auto;
+        margin: -2px 0 0 2px;
+        padding: 2px 4px;
+        width: auto;
+    }
+
+    .chartsDiv {
+        display: inline-block;
+        float: none;
+        margin: 2px 0 0 -139px;
+        position: relative;
+        width: 66%;
+    }
+
+    .timeInfo {
+        display: inline-block;
+        float: none;
+        height: 153px;
+        margin: 0 auto;
+        position: relative;
+        text-align: left;
+        width: 324px;
+    }
+
+    .headerIconMenu {
+        display: inline-block;
+        float: none;
+        margin: 2px auto;
+        position: relative;
+        width: 90%;
+    }
+
+    .verticalContainer {
+        background-color: #fff;
+        float: none;
+        height: 300px;
+        margin: 4px auto 2px;
+        overflow-y: auto;
+        width: 90%;
+        position: relative;
+        display: block;
+    }
+
+    .formContent {
+        width: 98%;
+    }
+
+    .formContentNew {
+        width: 98%;
+    }
+
+    .formCell, .rutanameDiv, .settingsrouteDivTipo {
+        width: auto;
+    }
+
+    .formCellFile {
+        margin: 3px 0 0 -11px;
+        width: 330px;
+    }
+
+    .searchDiv {
+        width: 80%;
+    }
+
+    .chartsDivReports {
+        width: 100%;
+    }
+
+    .verticalContainer2 {
+        background-color: #fff;
+        display: inline-block !important;
+        float: none;
+        height: 505px;
+        margin: 4px 4px 0 2px;
+        overflow-y: auto;
+        position: relative;
+        width: 98%;
+    }
+
+    .mapFormReport {
+        display: inline-block;
+        margin-top: 5px;
+        min-height: 370px;
+        position: relative;
+        width: 100% !important;
+    }
+
+    .viajesPasados {
+        margin: 10px 0 0 84px;
+    }
+
+    .viajesActivos {
+        margin: 10px 0 0 26px;
+    }
+
+    .menuChart {
+        margin: 48px -79px 0 0;
+    }
+
+    #hideTemperatura {
+        margin: 0px 4px 0;
+    }
+
+    .tempContainer {
+        margin: 8px 0 15px -85px;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    #chart_div {
+        display: block;
+        float: none;
+        height: 120px;
+        margin: 0 auto;
+        position: relative;
+        width: 310px !important;
+    }
+
+    .chartsDiv {
+        display: inline-block;
+        float: none;
+        height: auto;
+        margin: 2px 0 0 -84px;
+        position: relative;
+        width: 94%;
+    }
+
+    #chart_bar {
+        display: block;
+        float: none;
+        height: 130px;
+        position: relative;
+        width: 312px !important;
+        margin: 8px auto;
+    }
+
+    .selectContainer {
+        margin: 3px 0 0;
+    }
+
+    .gridPoints {
+        margin-top: 34px;
+    }
+
+    .viajesPasados {
+        margin: 10px 0 0 84px;
+    }
+
+    .formContentNew {
+        height: 72px;
+    }
+
+    #hideTemperatura {
+        left: 24px;
+        position: fixed;
+        top: 253px;
+    }
+
+    .tempContainer {
+        margin: 7px 0px 8px -112px;
+        width: 98%;
+    }
+
+    .menuChart {
+        margin: 51px 86px 9px 0;
+    }
+}
+/* iPhone 5 (portrait & landscape)----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+    #polyglotLanguageSwitcher, .navbar-brand {
+        display: none;
+    }
+
+    .navbar-header {
+        right: -30px;
+    }
+
+    .formConsulta {
+        width: 260px;
+    }
+
+    .editLineShow {
+        height: auto;
+        width: 90%;
+    }
+
+    .lineItems1 {
+        height: 75px;
+        width: auto;
+    }
+
+    .lineItems {
+        height: 82px;
+        width: auto;
+    }
+
+    .ordenTxtDiv, .clienteTxtDiv, .departamentoTxtDiv, .direccionTxtDiv, .selectViaje {
+        width: auto;
+    }
+
+    .geoMarker {
+        position: relative;
+        display: inline-block;
+        width: 16px;
+        margin-top: 12px !important;
+        margin-right: 200px !important;
+    }
+
+    .uploadFileBtnViaje {
+        background-color: #58585a;
+        border: 1px solid #777777;
+        border-radius: 3px;
+        color: #ffffff;
+        float: right;
+        font-family: Quicksand;
+        font-size: 13px;
+        font-weight: 600;
+        height: 23px;
+        margin-right: -1px;
+        margin-top: -20px;
+        width: 70px;
+    }
+
+    .dateViaje {
+        height: auto;
+        width: 90%;
+    }
+
+    .viajesActivos, .viajesPasados {
+        margin: 39px 0 0 -2px;
+        position: relative;
+        overflow-x: auto;
+    }
+
+    .timerPoints {
+        top: 34%;
+        height: 400px;
+    }
+
+    .searchDiv {
+        width: 95%;
+        float: none;
+        margin: 2px 10px 0 14px;
+    }
+
+        .searchDiv span {
+            display: none;
+        }
+
+    .chartsDivReports {
+        float: none;
+    }
+
+    .formCellConsultaLeft {
+        margin: 27px 0 5px 6px;
+        width: auto;
+    }
+
+    .settingsrouteDivDias {
+        width: auto;
+    }
+
+    .formCellFile {
+        margin: 3px 0 0 -11px;
+        width: 300px;
+    }
+
+    .lhFile {
+        margin: 1px -38px 0;
+        width: 70px;
+    }
+
+    .uploadFileBtn {
+        margin: 5px 0 0 45px;
+    }
+
+    .uploadFileBtnSave {
+        font-size: 13px;
+        height: 20px;
+        margin: -12px 42px;
+        width: 80px;
+    }
+
+    .routeForm {
+        height: 860px;
+    }
+
+    .settingsroute {
+        height: 300px;
+    }
+
+    .menuChart {
+        margin: 51px 86px 9px 0;
+    }
+
+    #hideTemperatura {
+        position: fixed;
+        top: 117px;
+        left: 21px;
+        z-index: 999;
+    }
+
+    .tempContainer {
+        display: none;
+        float: left;
+        height: 160px;
+        margin: 6px 0 0 -122px;
+        position: relative;
+        width: 336px;
+        overflow: auto;
+        margin-bottom: 16px;
+        z-index: 0;
+    }
+
+    .torre-body {
+        background-color: #fafafa;
+        border: 1px solid #dfe2e4;
+        border-radius: 8px;
+        display: none;
+        float: left;
+        height: 500px;
+        margin: 1px 6px 2px 2px;
+        padding: 8px;
+        width: 96%;
+    }
+}
+/* END: Mobile Styles */
+.chkOrdenes {
+    display: block;
+    margin: 8px 0 0 9px;
+    padding: 5px 0 0 8px;
+    position: relative;
+}
+
+.transIDs {
+    display: block;
+    height: 64px;
+    margin: 5px 4px;
+    padding: 2px;
+    width: 326px;
+}
+
+.transTitle {
+    font-size: 14px;
+}
+
+.tblOrdenesInsert {
+    background-color: #fafafa;
+    display: none;
+    padding: 8px 14px;
+    width: auto;
+}
+
+.btnTrans {
+    background-color: #777777;
+    color: #ffffff;
+    padding: 4px 8px;
+}
+
+.white {
+    color: #FFFFFF;
+}
+
+.tableTower table {
+    margin: 8px auto;
+    width: 96%;
+}
+
+.tableTower {
+    overflow-y: auto;
+    height: 440px;
+}
+
+table.tableTower tr:not(:first-child):hover {
+    background-color: #FFECA0;
+    color: #777;
+    cursor: pointer;
+}

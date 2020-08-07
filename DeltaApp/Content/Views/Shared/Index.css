@@ -1,0 +1,79 @@
+﻿/*
+// ===================================================================================================
+// Desarrollado Por		    :   Harold Caicedo.
+// Fecha de Creación		:   2016/05/02.
+// ===================================================================================================
+// Versión	        Descripción
+// 1.0.0.0	        hoja de estilos generales para la aplicacion.
+// ===================================================================================================
+// HISTORIAL DE CAMBIOS:
+// ===================================================================================================
+// Ver.	 Fecha		    Autor					Descripción
+// ---	 -------------	----------------------	------------------------------------------------------
+// XX	 yyyy/MM/dd	    [Nombre Completo]	    [Razón del cambio realizado] 
+// ===================================================================================================
+*/
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background: blue;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+    color: red !important;
+}
+
+.h1 {
+    font-family: Calibri;
+    margin: 0px;
+    height: 14px;
+    padding: 4px 0px 4px 0px;
+    text-align: center;
+    background: #cc0000;
+    color: white;
+}
+
+.h2 {
+    margin: 0;
+    height: 30px;
+    font: bolder 15pt Calibri;
+    padding: 4px;
+    text-align: center;
+    background: #cc0000;
+    color: white;
+}
+
+.h3 {
+    font-size: 9pt;
+    font-family: Calibri;
+    margin: 0px;
+    height: 12px;
+    padding: 4px 0px 4px 0px;
+    text-align: center;
+    background: #cc0000;
+    color: white;
+}
+
+.h4 {
+    font-size: 10pt;
+    font-family: Calibri;
+    margin: 0px;
+    height: auto;
+    padding-top: 1px;
+    padding-right: 3px;
+    padding-left: 3px;
+    padding-bottom: 1px;
+    text-align: center;
+    background: #cc0000;
+    color: white;
+}
+
+.h5 {
+    margin: 0px;
+    height: 20px;
+    font: bolder 15pt Calibri;
+    /*padding: 4px 4px 4px 4px;*/
+    text-align: center;
+    background: #cc0000;
+    color: white;
+}

@@ -1,0 +1,128 @@
+﻿@*<link href="~/Content/site.css" rel="stylesheet" />*@
+
+
+<link href="~/Content/Views/Product/Index.css" rel="stylesheet" />
+<script src="~/Scripts/Views/Product/ShowPreviewInfo.js"></script>
+<script src="~/Scripts/Views/Report5/index.js"></script>
+
+@model  DeltaApp.Models.GENERAL_RESUME_VIEW
+@{
+
+//Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script>
+    $(document).ready(function () {
+        // Inicializar productos.
+        Report5Index.initializeComponents();
+    });
+</script>
+
+<script type="text/javascript">
+</script>
+
+
+
+
+
+@*@using (Html.BeginForm(new { ReturnUrl = ViewBag.ReturnUrl }))*@
+@using (Html.BeginForm("Index", "Report5", FormMethod.Post, new { id = "formReport1" }))
+{
+
+
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <div>
+        <div>
+            <h2 class="h2">Reporte Resumen General</h2>
+        </div>
+    </div>
+        <div>
+            <div>
+                <br />
+                <fieldset>
+
+
+                    <legend id="lgnCustomer" class="desc">
+                        Seleccione Fecha
+                    </legend>
+
+                    <div>
+                        <label class="desc" id="lblFromDate" for="txtFromDate">
+                            Desde *
+                        </label>
+                        <div>
+                            <input id="txtFromDate" name="txtFromDate" type="text" value="" class="validate[required, custom[date]]">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="desc" id="lblToDate" for="txtToDate">
+                            Hasta *
+                        </label>
+                        <div>
+                            <input id="txtToDate" name="txtToDate" type="text" value="" class="validate[required, custom[date]]">
+                        </div>
+                    </div>
+                    <br />
+
+                    <div>
+                        <div style="text-align: center;">
+                            <input id="btnGenerateReport" name="btnGenerateReport" type="submit" value="Crear">
+                        </div>
+                    </div>
+
+                    <br />
+                    <ol>
+                        <li>
+                            @*@Html.LabelFor("fecha")
+                            @Html.TextBoxFor(m => m.MSR_DATE)
+                            @Html.ValidationMessageFor(m => m.PDT_NAME)*@
+
+                        </li>
+                    </ol>
+                   @* <input type="submit"  id="btnSubmit" value="View Report" />*@
+                </fieldset>
+
+                
+            </div>
+
+            
+        </div>
+
+}
+@*<embed id ="pdfViwer" src="/pdf/sample-3pp.pdf#page=2" type="application/pdf" width="100%" height="100%">*@
+
+@using ReportViewerForMvc;
+@*@Html.ReportViewer(ViewBag.ReportViewer as Microsoft.Reporting.WebForms.ReportViewer)*@
+<div>
+    <div id="reportView" style="background: rgb(69, 69, 69);">
+
+        <img id="reportJPG" />
+
+    </div>
+
+    <div id="buttonHolder">
+
+    </div>
+</div>
+
+
+
+</rsweb:ReportViewer>
+
+@if (Model != null)
+{
+
+    <section class="social" id="ReportDisplayPanel">
+        <h4>Report Viewer Section.</h4>
+        @Html.ActionLink("View Report in PDF Format", "GenerateAndDisplayReport", new { territory = Model.PDT_NAME, format = "pdf" })
+        @Html.ActionLink("Download Report in PDF Format", "DownloadReport", new { territory = Model.PDT_NAME, format = "pdf" })
+        <img src="@Url.Action("GenerateAndDisplayReport", "Report1", new { territory = Model.PDT_NAME, format = Model.PROC_N0_NAME })" />
+      
+    </section>
+}
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

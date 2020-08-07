@@ -1,0 +1,50 @@
+﻿<link href="~/Content/Views/DivisionN2/Index.css" rel="stylesheet" />
+
+<script src="~/Scripts/Views/DivisionN2/Index.js"></script>
+
+<script type="text/javascript">
+    $(window).load(function () { $("#spinner").fadeOut("slow"); })
+    $(document).ready(function () {
+        var listCmd = '@this.Url.Action("GetDivisionN2s", "DivisionN2")';
+        var deleteCmd = '@this.Url.Action("DeleteDivisionN2", "DivisionN2")';
+        var updateCmd = '@this.Url.Action("UpdateDivisionN2", "DivisionN2")';
+        var createCmd = '@this.Url.Action("CreateDivisionN2", "DivisionN2")';
+        DivisionN2Index.initializeComponents(listCmd, deleteCmd, updateCmd, createCmd);
+    });
+</script>
+@using (Html.BeginForm("Index", "DivisionN2", FormMethod.Post, new { id = "formDivisionN2" }))
+{
+    <div>
+        <div>
+            <h2 class="h2">Divisiones N2</h2>
+        </div>
+    </div>
+
+    <div>
+        <div>
+            <table style="width: 100%; text-align: center;">
+                <tr>
+                    <td>
+                        <input id="txtName" name="txtName" placeholder="Nombre" type="text" />
+                    </td>
+                </tr>
+            </table>
+            <hr />
+            <table style="width: 100%; text-align: center;">
+                <tr>
+                    <td>
+                        <input type="submit" id="btnIndex" value="Atrás" class="input button" />
+                        <input type="submit" id="btnSearch" value="Buscar" class="input button" />
+                        <input type="submit" id="btnNewSearch" value="Nueva Búsqueda" class="input button" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div>
+        <div>
+            <hr />
+        </div>
+    </div>
+    <div id="divDivisionN2TableContainerValue"></div>
+}

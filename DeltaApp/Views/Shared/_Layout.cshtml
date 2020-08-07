@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title -  Delta</title>
+    @*@Styles.Render("~/Content/css")*@
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="~/Content/themes/jquery-ui.css" rel="stylesheet" />
+    <link href="~/Scripts/jtable/themes/metro/crimson/jtable.css" rel="stylesheet" />
+    <link href="~/Scripts/validationEngine/validationEngine.jquery.css" rel="stylesheet" />
+    <link href="~/Content/lobibox-master/lobibox.css" rel="stylesheet" />
+    <link href="~/Content/jquery.msg/jquery.msg.css" rel="stylesheet" />
+    <link href="~/Content/sticky-footer-navbar.css" rel="stylesheet" />
+    <link href="~/Content/Views/Shared/Index.css" rel="stylesheet" />
+
+    <script src="~/Scripts/jquery-2.2.2.js"></script>
+    <script src="~/Content/customThemeJquery/jquery-ui.js"></script>
+    <script src="~/Scripts/jquery-ui-1.11.4.js"></script>
+    <script src="~/Scripts/jtable/jquery.jtable.js"></script>
+    <script src="~/Scripts/jtable/localization/jquery.jtable.es.js"></script>
+    <script src="~/Scripts/validationEngine/jquery.validationEngine.js"></script>
+    <script src="~/Scripts/validationEngine/jquery.validationEngine-languageSettings.js"></script>
+    <script src="~/Scripts/lobibox-master/lobibox.js"></script>
+    <script src="~/Scripts/lobibox-master/messageboxes.js"></script>
+    <script src="~/Scripts/lobibox-master/notifications.js"></script>
+    <script src="~/Scripts/jquery.msg/jquery.center.min.js"></script>
+    <script src="~/Scripts/blockUi/jquery.blockUI.js"></script>
+    <script src="~/Scripts/jquery.msg/jquery.msg.js"></script>
+    <script src="../Scripts/CustomControls/AutoCompleteComboBox.js"></script>
+    <script src="../Scripts/CustomControls/AutoCompleteHelper.js"></script>
+    <script src="../Scripts/CustomControls/AutoCompleteHelperNoSelected.js"></script>
+    <script src="~/Scripts/jquery.linq.js"></script>
+    <script src="~/Scripts/linq.js"></script>
+    <script src="~/Scripts/rx.js"></script>
+    <script src="~/Scripts/linq.rx.js"></script>
+
+    <script src="~/Scripts/CommonUtils/CommonUtils.js"></script>
+    <script src="~/Scripts/CommonUtils/LayoutHelper.js"></script>
+    <script>
+        $(document).ready(function () {
+            LayoutHelper.authorizeConfigurationModuleServices();
+        });
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="background: white;">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img src="~/Content/Images/Delta.PNG" class="navbar-logo-layout" style="width: 160px;" />
+                <img src="~/Content/Images/planInternacional.jpg" class="navbar-logo-layout" style="width: 160px;" />
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul id="ulModulesApp" class="nav navbar-nav" style="margin-top: 10px; margin-left: 5px;">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">Usuarios<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li data-name="Rol">@Html.ActionLink("Roles", "Index", "Rol")</li>
+                            <li data-name="User">@Html.ActionLink("Usuarios", "Index", "User")</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">Procesos<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li data-name="Process">@Html.ActionLink("Proceso", "Index", "Process")</li>
+                            <li data-name="ProcessN1">@Html.ActionLink("Procedimiento N1", "Index", "ProcessN1")</li>
+                            <li data-name="ProcessN2">@Html.ActionLink("Procedimiento N2", "Index", "ProcessN2")</li>
+                            <li data-name="ProcessN2">@Html.ActionLink("Procedimiento N3", "Index", "ProcessN2")</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">Divisiones<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li data-name="Area">@Html.ActionLink("Áreas", "Index", "Area")</li>
+                            <li data-name="DivisionN1">@Html.ActionLink("Divisiones N1", "Index", "DivisionN1")</li>
+                            <li data-name="DivisionN2">@Html.ActionLink("Divisiones N2", "Index", "DivisionN2")</li>
+                            <li data-name="DivisionN3">@Html.ActionLink("Divisiones N3", "Index", "DivisionN3")</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">Producto<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li data-name="Pertinence">@Html.ActionLink("Pertinencias", "Index", "Pertinence")</li>
+                            <li data-name="Product_create">@Html.ActionLink("Creacion Producto", "Index", "Product")</li>
+                            <li data-name="Product_edit">@Html.ActionLink("Editar Producto", "EditIndex", "Product")</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">Reportes<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li data-name="Report1">@Html.ActionLink("Resumen General", "Index", "Report1")</li>
+                            <li data-name="Report2">@Html.ActionLink("Efectividad de Productos", "Index", "Report2")</li>
+                            <li data-name="Report3">@Html.ActionLink("Productos No Medidos", "Index", "Report3")</li>
+                            <li data-name="Report4">@Html.ActionLink("Defectos por Proceso", "Index", "Report4")</li>
+                            <li data-name="Report5">@Html.ActionLink("Pertinencias con Mayor Fallo", "Index", "Report5")</li>
+                            @* <li>@Html.ActionLink("Producto", "Index", "Product")</li>*@
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">Medición<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li data-name="Measure">@Html.ActionLink("Medición", "Index", "Measure")</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <ul class="nav navbar-nav navbar-right" style="margin-top: 10px;">
+                    <li class="dropdown">
+                        <a id="lnkDropUserName" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                           aria-haspopup="true" aria-expanded="false">@this.ViewBag.CurrentUserName.ToString()<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Cerrar Sesión", "Index", "Login", routeValues: null, htmlAttributes: new { id = "lnkUserName" })</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div>
+            @RenderBody()
+        </div>
+    </div>
+    <input type="hidden" id="hdnUserPermission" name="hdnUserPermission" value="@this.ViewBag.UserPermission.ToString()" />
+    @*<footer class="navbar navbar-inverse navbar-fixed-bottom" style="background: white;">
+        <div class="container" style="text-align:center;">
+            <p class="text-muted">@DateTime.Now.Year - Pacific CO [Powered by Albatros Soft]</p>
+        </div>
+    </footer>*@
+    @RenderSection("scripts", required: false)
+</body>
+</html>

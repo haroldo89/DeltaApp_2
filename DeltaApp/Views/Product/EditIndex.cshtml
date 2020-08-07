@@ -1,0 +1,58 @@
+﻿<link href="~/Content/Views/Product/EditIndex.css" rel="stylesheet" />
+
+<script src="~/Scripts/Views/Product/EditIndex.js"></script>
+
+<script type="text/javascript">
+    $(window).load(function () { $("#spinner").fadeOut("slow"); })
+    $(document).ready(function () {
+        var listCmd = '@this.Url.Action("GetProducts", "Product")';
+        var deleteCmd = '@this.Url.Action("DeleteProduct", "Product")';
+        EditProductIndex.initializeComponents(listCmd, deleteCmd);
+    });
+</script>
+@using (Html.BeginForm("Index", "Product", FormMethod.Post, new { id = "formArea" }))
+{
+    <div>
+        <div>
+            <h2 class="h2">Productos</h2>
+        </div>
+    </div>
+
+    <div>
+        <div>
+            <table style="width: 100%; text-align: center;">
+                <tr>
+                    <td>
+                        <input id="txtProductName" name="txtProductName" placeholder="Nombre" type="text" />
+                    </td>
+                    <td>
+                        <input id="txtProductSigla" name="txtProductSigla" placeholder="Sigla" type="text" />
+                    </td>
+                    <td>
+                        <input id="txtProductDesc" name="txtProductDesc" placeholder="Descripcion" type="text" />
+                    </td>
+                </tr>
+            </table>
+            <hr />
+            <table style="width: 100%; text-align: center;">
+                <tr>
+                    <td>
+                        <input type="submit" id="btnSearch" value="Buscar" class="input button" />
+                        <input type="submit" id="btnNewSearch" value="Nueva Búsqueda" class="input button" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div>
+        <div>
+            <hr />
+        </div>
+    </div>
+    <div id="divProductTableContainerValue"></div>
+    @*<div id="divDivisionContainer" style="display:none;">
+            <div id="divDivisionN1TableContainer">
+                <div id="divDivisionN1TableContainerValue"></div>
+            </div>
+        </div>*@
+}

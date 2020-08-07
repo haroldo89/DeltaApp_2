@@ -1,0 +1,51 @@
+﻿<link href="~/Content/Views/User/Index.css" rel="stylesheet" />
+
+<script src="~/Scripts/Views/User/Index.js"></script>
+
+<script type="text/javascript">
+    $(window).load(function () { $("#spinner").fadeOut("slow"); })
+    $(document).ready(function () {
+        var listCmd = '@this.Url.Action("GetUser", "User")';
+        var deleteCmd = '@this.Url.Action("DeleteUser", "User")';
+        var updateCmd = '@this.Url.Action("UpdateUser", "User")';
+        var createCmd = '@this.Url.Action("CreateUser", "User")';
+        UserIndex.initializeComponents(listCmd, deleteCmd, updateCmd, createCmd);
+    });
+</script>
+
+@using (Html.BeginForm("Index", "User", FormMethod.Post, new { id = "formDivisionN1" }))
+{
+    <div>
+        <div>
+            <h2 class="h2">Usuarios</h2>
+        </div>
+    </div>
+
+    <div>
+        <div>
+            <table style="width: 100%; text-align: center;">
+                <tr>
+                    <td>
+                        <input id="txtName" name="txtName" placeholder="Nombre" type="text" />
+                    </td>
+                </tr>
+            </table>
+            <hr />
+            <table style="width: 100%; text-align: center;">
+                <tr>
+                    <td>
+                        <input type="submit" id="btnIndex" value="Atrás" class="input button" />
+                        <input type="submit" id="btnSearch" value="Buscar" class="input button" />
+                        <input type="submit" id="btnNewSearch" value="Nueva Búsqueda" class="input button" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div>
+        <div>
+            <hr />
+        </div>
+    </div>
+    <div id="divUserTableContainerValue"></div>
+}

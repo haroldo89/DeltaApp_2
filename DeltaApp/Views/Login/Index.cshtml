@@ -1,0 +1,52 @@
+﻿@model DeltaApp.Models.UserLoggedInfo
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delta - Portal Administrador</title>
+    @*<link rel="shortcut icon" />href="<%= Page.ResolveUrl(" ~/favicon.png")%>" />*@
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <link href="~/Content/Styles/layout.css" rel="stylesheet" />
+    <link href="~/Content/Styles/font-awesome.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <script src="~/Scripts/jquery-2.2.2.js"></script>
+    <script src="~/Scripts/jquery-migrate-1.2.1.js"></script>
+    <script src="~/Scripts/modernizr.custom.js"></script>
+    <script src="~/Scripts/responsive.js"></script>
+</head>
+<body>
+    @using (Html.BeginForm("Index", "Login", FormMethod.Post, new { id = "form1" }))
+    {
+        <div class="main-content">
+            <div class="main-content-login">
+                <div class="overlay"></div>
+                <div class="form-bg">
+                    <div class="form">
+                        @{
+                            if (this.ViewBag.resultMessage != null)
+                            {
+                                <label ID="lblAlertMsg" class="alertMsg">@ViewBag.resultMessage</label>
+                            }
+                        }
+                        <div class="space">
+                            <p>
+                                @Html.TextBoxFor(u => u.UserName, new { id = "txtUserName", name = "name", placeholder = "User", required = "required" })
+                            </p>
+                            <p>
+                                @Html.PasswordFor(u => u.Password, new { id = "txtPassword", name = "password", placeholder = "Password", required = "required" })
+                            </p>
+                            <input type="submit" id="submitLogin" class="submitLogin" value="Login" />
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+                            }
+    <footer class="footer text-center">
+        <p class="text-muted">@DateTime.Now.Year - Pacific CO [Powered by Albatros Soft]</p>
+    </footer>
+</body>
+</html>
